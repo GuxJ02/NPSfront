@@ -1,0 +1,3034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniVisor</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Personal CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="static/images/imagenLogo2.png" alt="Logo" class="logo" style="max-height: 50px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav" style="margin-left: -150px;">
+                <ul class="navbar-nav">
+                    <li class="nav-item" onclick="scrollToDivContainer('Servicioss')">
+                        <a class="nav-link"><strong>Servicios</strong></a>
+                    </li>
+                    <li class="nav-item" onclick="scrollToDivContainer('Funcionamiento')">
+                        <a class="nav-link"><strong>Funcionamiento</strong></a>
+                    </li>
+                    <li class="nav-item" onclick="scrollToDivContainer('UsoHerramienta')">
+                        <a class="nav-link"><strong>Instrucciones</strong></a>
+                    </li>
+                    <li class="nav-item" onclick="scrollToDivContainer('universidades')">
+                        <a class="nav-link"><strong>Universidades</strong></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+    <div class="header-content">
+        <h1><strong>¡Bienvenido A UniVisor!</strong></h1>
+        <h2>ANALIZA TU UNIVERSIDAD</h2>
+        <button class="btn btn-warning" onclick="scrollToDivContainer('universidades')">ENCUENTRA TU UNIVERSIDAD</button>
+    </div>
+    <div class="container mt-5 pb-5">
+        <div class="row text-center" id="Servicioss">
+            <h2 class="mb-4"><strong>SERVICIOS QUE OFRECEMOS</strong></h2>
+            <p class="mb-5">Analisis de las opiniones de miles de personas sobre tu universidad</p>
+            <div class="col-lg-4 mb-4">
+                <div class="service-item mx-auto">
+                    <span class="icon-circle bg-warning mb-3">
+                        <i class="fas fa-chart-line text-white" style="font-size: 1.2em;"></i>
+                    </span>
+                    <h4>Analisis NPS</h4>
+                    <p>El analisis conocido como NPS nos dice cuanto es de probable que una persona recomiende la universidad en la que tienes interes de entrar por una faceta de la misma.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="service-item mx-auto">
+                    <span class="icon-circle bg-warning mb-3">
+                        <i class="fas fa-robot text-white" style="font-size: 1.2em;"></i>
+                    </span>
+                    <h4>Inteligencia Artirtificial</h4>
+                    <p>Para estos analisis utilizamos una inteligencia artificial capaz de entender los diferentes comentarios tanto positivos como negativos de cada universidad y puntuarlos.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="service-item mx-auto">
+                    <span class="icon-circle bg-warning mb-3">
+                        <i class="fas fa-key text-white" style="font-size: 1.2em;"></i>
+                    </span>
+                    <h4>Palabras Clave</h4>
+                    <p>El análisis específico de cada universidad evaluará palabras clave para elegir tu universidad, relacionadas con instalaciones, calidad del profesorado y más.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full-width-section" style="background-color: #f4f4f4;" id="Funcionamiento">
+        <div class="container feature-section mt-5 py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="static/images/imagenGoogleMaps.jpg" alt="Feature Image" class="img-fluid" style="max-width: 600px;">
+                </div>
+                <div class="col-md-6">
+                    <h2><strong>¿COMO FUNCIONA?</strong></h2>
+                    <p>UniVisor utiliza reseñas de Google Maps de diversas universidades para ofrecer una visión detallada y temática de cada institución. Estas reseñas se podrán clasificar en diferentes categorías filtradas por palabras en especifico. Posteriormente, un algoritmo de inteligencia artificial evalúa cada reseña, asignando una puntuación de 0 a 100 para finalmente realizar la media de todas las opiniones, indicando la probabilidad de que el reseñador recomiende la universidad dado el filtro introducido. A su vez también se mostraran datos adicionales que permitirán una mejor comprensión del analisis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full-width-section" style="background-color: #F8F9FA;" id="UsoHerramienta">
+        <div class="container feature-section mt-5 py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2><strong>¿CÓMO UTILIZAR LA HERRAMIENTA?</strong></h2>
+                    <p>Para utilizar UniVisor, simplemente accede a la plataforma y busca la universidad de tu interés. Puedes filtrar las opiniones según diferentes categorías como infraestructura, calidad docente, y más dependiendo de la palabra o palabras que se introduzca para el filtrado. Dentro de cada universidad encontraras una serie de tematicas/palabras que han sido muy abordadas en las reseñas de la universidad seleccionada y que podrás consultar simplemente poniendo el nombre del tema o palabras relacionadas con este, las palabras tardaran unos segundos en cargar al pulsar sobre la universidad. A su vez utilizando el siguiente separador entre palabras "-" podrás analizar diversas tematicas todas juntas. La plataforma te mostrará una visión general basada en las reseñas de Google Maps y te proporcionará en primer lugar un analisis NPS el cual te dará un porcentage de como es de probable que se recomiende esa universidad por la tematica introducida como filtro, posteriormente un analisis de positividad negatividad y neutralidad de todas las reseñas analizadas y por ultimo la media de estrellas introducidas y la desviación tipica de los resultados obtenidos del analisis NPS, en algunos casos donde se analicen muchas reseñas el analisis puede tardar un poco más debido a la cantidad de reseñas a analizar.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="static/images/imagenComo.jpg" alt="Uso Herramienta" class="img-fluid" style="max-width: 600px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sección de Portfolio -->
+    <!-- Portfolio Grid-->
+    <section class="page-section" style="background-color: #F4F4F4; padding-top: 50px;" id="universidades">
+        <div class="container mt-5" style="margin-top: 0px;">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase"><strong>Universidades</strong></h2>
+                <h3 class="section-subheading text-muted">Universidades de España disponibles</h3>
+            </div>
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Universidad item 1-->
+                    <div class="universidad-item">
+                        <a class="universidad-link" data-bs-toggle="modal" href="#universidadModal2" onclick="cargarPalabrasDeInteres('UniversidadFranciscoVitoria');">
+                        <div class="universidad-hover">
+                            <div class="universidad-hover-content"><i class="fas fa-chart-line fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="static/images/UFV.jpg" alt="UniversidadFrancisco de vitoria" style="width: 416px; height: 313px;" />
+                        </a>
+                        <div class="universidad-caption">
+                            <div class="universidad-caption-heading">Universidad Francisco de Vitoria</div>
+                            <div class="universidad-caption-subheading text-muted">Pozuelo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Universidad item 2-->
+                    <div class="universidad-item">
+                        <a class="universidad-link" data-bs-toggle="modal" href="#universidadModal3" onclick="cargarPalabrasDeInteres2('UniversidadComplutense');">
+                        <div class="universidad-hover">
+                            <div class="universidad-hover-content"><i class="fas fa-chart-line fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="static/images/complutense.jpg" alt="Universidad Complutense" />
+                        </a>
+                        <div class="universidad-caption">
+                            <div class="universidad-caption-heading">Universidad Complutense</div>
+                            <div class="universidad-caption-subheading text-muted">Madrid</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Universidad item 3-->
+                    <div class="universidad-item">
+                        <a class="universidad-link" data-bs-toggle="modal" href="#universidadModal4" onclick="cargarPalabrasDeInteres3('UniversidadEuropea');">
+                        <div class="universidad-hover">
+                            <div class="universidad-hover-content"><i class="fas fa-chart-line fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="static/images/Europea.jpg" alt="Universidad europea" />
+                        </a>
+                        <div class="universidad-caption">
+                            <div class="universidad-caption-heading">Universidad Europea</div>
+                            <div class="universidad-caption-subheading text-muted">Madrid</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Universidad item 4-->
+                    <div class="universidad-item">
+                        <a class="universidad-link" data-bs-toggle="modal" href="#universidadModal5" onclick="cargarPalabrasDeInteres4('UniversidadAutonomaBarcelona');">
+                        <div class="universidad-hover">
+                            <div class="universidad-hover-content"><i class="fas fa-chart-line fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="static/images/AutonomaBarcelona.jpg" alt="Autonoma de barcelona" />
+                        </a>
+                        <div class="universidad-caption">
+                            <div class="universidad-caption-heading">Universidad Autonoma de Barcelona</div>
+                            <div class="universidad-caption-subheading text-muted">Barcelona</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <!-- Universidad item 5-->
+                    <div class="universidad-item">
+                        <a class="universidad-link" data-bs-toggle="modal" href="#universidadModal6" onclick="cargarPalabrasDeInteres5('UniversidadDeZaragoza');">
+                        <div class="universidad-hover">
+                            <div class="universidad-hover-content"><i class="fas fa-chart-line fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="static/images/UniversidadZaragoza.jpg" alt="Universidad de Zaragoza" style="width: 416px; height: 313px;" />
+                        </a>
+                        <div class="universidad-caption">
+                            <div class="universidad-caption-heading">Universidad De Zaragoza</div>
+                            <div class="universidad-caption-subheading text-muted">Zaragoza</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Universidad item 6-->
+                    <div class="universidad-item">
+                        <a class="universidad-link" data-bs-toggle="modal" href="#universidadModal7" onclick="cargarPalabrasDeInteres6('UniversidadAutonomaMadrid');">
+                        <div class="universidad-hover">
+                            <div class="universidad-hover-content"><i class="fas fa-chart-line fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="static/images/AutonomaMadrid.jpg" alt="Autonoma de Madrid" style="width: 416px; height: 313px;" />
+                        </a>
+                        <div class="universidad-caption">
+                            <div class="universidad-caption-heading">Universidad Autonoma De Madrid</div>
+                            <div class="universidad-caption-subheading text-muted">Madrid</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Universidad item 4-->
+                    <div class="universidad-item">
+                        <a class="universidad-link" data-bs-toggle="modal" href="#universidadModal8" onclick="cargarPalabrasDeInteres7('UniversidadValencia');">
+                        <div class="universidad-hover">
+                            <div class="universidad-hover-content"><i class="fas fa-chart-line fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="static/images/UniversidadValencia.jpg" alt="Universidad de Valencia" style="width: 416px; height: 313px;" />
+                        </a>
+                        <div class="universidad-caption">
+                            <div class="universidad-caption-heading">Universitat de València</div>
+                            <div class="universidad-caption-subheading text-muted">Valencia</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <!-- Universidad item 5-->
+                    <div class="universidad-item">
+                        <a class="universidad-link" data-bs-toggle="modal" href="#universidadModal9" onclick="cargarPalabrasDeInteres8('UniversidadCarlos');">
+                        <div class="universidad-hover">
+                            <div class="universidad-hover-content"><i class="fas fa-chart-line fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="static/images/UniversidadCarlos.jpg" alt="Carlos tercero" style="width: 416px; height: 313px;"/>
+                        </a>
+                        <div class="universidad-caption">
+                            <div class="universidad-caption-heading">Universidad Carlos III | Campus del leganes</div>
+                            <div class="universidad-caption-subheading text-muted">Madrid</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Universidad item 6-->
+                    <div class="universidad-item">
+                        <a class="universidad-link" data-bs-toggle="modal" href="#universidadModal10" onclick="cargarPalabrasDeInteres9('UniversidadNebrija');">
+                        <div class="universidad-hover">
+                            <div class="universidad-hover-content"><i class="fas fa-chart-line fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="static/images/UniversidadNebrija.jpg" alt="Nebrija" style="width: 416px; height: 313px;" />
+                        </a>
+                        <div class="universidad-caption">
+                            <div class="universidad-caption-heading">Universidad Nebrija</div>
+                            <div class="universidad-caption-subheading text-muted">Madrid</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CSS inline -->
+    <style>
+        .small-icon {
+            font-size: 0.6em; /* Ajusta el tamaño del icono */
+            color: #007bff; /* Color azul para resaltar */
+            margin-left: 5px; /* Espacio a la izquierda del icono */
+            cursor: pointer; /* Cambia el cursor al pasar por encima */
+        }
+        .small-icon:hover {
+            color: #0056b3; /* Color más oscuro al pasar por encima */
+        }
+        .highlight-icon {
+            color: #007bff; /* Color azul para resaltar */
+            font-size: 1.1em; /* Aumenta el tamaño del icono */
+            margin-left: 8px; /* Espacio a la izquierda del icono */
+            cursor: pointer; /* Cambia el cursor al pasar por encima */
+        }
+        .highlight-icon:hover {
+            color: #0056b3; /* Color más oscuro al pasar por encima */
+        }
+        .skill-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 150px; /* Espacio entre los círculos */
+        }
+        .skill {
+            width: 160px;
+            height: 160px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; 
+        }
+        circle {
+            fill: none;
+            stroke: url(#GradientColor);
+            stroke-width: 20px;
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+            transition: stroke-dashoffset 0.6s ease 0s;
+        }
+        #progress-circle {
+            fill: none;
+            stroke: url(#GradientColor1);
+            stroke-width: 20px;
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+            transition: stroke-dashoffset 0.6s ease 0s;
+        }
+        #progress-circle2 {
+            fill: none;
+            stroke: url(#GradientColor2);
+            stroke-width: 20px;
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+            transition: stroke-dashoffset 0.6s ease 0s;
+        }
+        #progress-circle3 {
+            fill: none;
+            stroke: url(#GradientColor3);
+            stroke-width: 0px;
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+            transition: stroke-dashoffset 0.6s ease 0s;
+        }
+        #progress-circle4 {
+            fill: none;
+            stroke: url(#GradientColor4);
+            stroke-width: 20px;
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+            transition: stroke-dashoffset 0.6s ease 0s;
+        }
+        #progress-circle5 {
+            fill: none;
+            stroke: url(#GradientColor5);
+            stroke-width: 20px;
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+            transition: stroke-dashoffset 0.6s ease 0s;
+        }
+        #progress-circle6 {
+            fill: none;
+            stroke: url(#GradientColor6);
+            stroke-width: 20px;
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+            transition: stroke-dashoffset 0.6s ease 0s;
+        }
+        #progress-circle7 {
+            fill: none;
+            stroke: url(#GradientColor7);
+            stroke-width: 20px;
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+            transition: stroke-dashoffset 0.6s ease 0s;
+        }
+        #progress-circle8 {
+            fill: none;
+            stroke: url(#GradientColor8);
+            stroke-width: 20px;
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+            transition: stroke-dashoffset 0.6s ease 0s;
+        }
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: rotate(-90deg);
+        }
+        .skill-name {
+            text-align: center; /* Centra el texto bajo el círculo */
+            margin-top: 10px; /* Ajusta la separación entre el círculo y el nombre */
+            font-size: 16px; /* Ajusta el tamaño del texto según necesidades */
+            color: #333; /* Color del texto */
+            font-weight: bold; /* Peso de la fuente */
+        }
+        .map-icon i {
+            font-size: 2rem;
+            color: #007bff;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .map-icon:hover i {
+            color: #0056b3; /* Color al pasar por encima */
+            transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+        }
+    </style>
+</section>
+
+<footer class="bg-body-tertiary text-center" style="margin-top: 50px;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Google -->
+            <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="mailto:javier.garzon.martinez@gmail.com" role="button">
+                <i class="fab fa-google"></i>
+            </a>
+            <!-- Linkedin -->
+            <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/in/javier-garzón-62b842255" role="button">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <!-- Github -->
+            <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/GuxJ02" role="button">
+                <i class="fab fa-github"></i>
+            </a>
+        </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 UniVisor. Todos los derechos reservados.
+    </div>
+</footer>
+
+
+
+  <!-- Sección de los modales de la universidad -->
+  <div class="universidad-modal modal fade" id="universidadModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times"></i></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="parte-superior">
+                            <h2 class="text-uppercase">UNIVERSIDAD FRANCISCO DE VITORIA</h2>
+                            <p class="item-intro text-muted">Pozuelo</p>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Universidad+Francisco+de+Vitoria" target="_blank" class="d-block text-center my-3 map-icon">
+                                 Maps <i class="bi bi-geo-alt-fill"></i>
+                            </a>
+                            <img class="img-fluid d-block mx-auto" src="static/images/UFV.jpg" alt="..." style="max-width: 100%; height: auto; width: 400px;">
+                            <p>Introduzca una palabra para analizar los comentarios relacionados con la misma o varias palabras o tematicas separadas por un -. Ejemplo: universidad publica-matematicas</p>
+                            <p>Algunos analisis pueden tardar varios minutos se recomienda no introducir muchas palabras juntas</p>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="filtroTexto" placeholder="Introduce una palabra">
+                                <button id="actionButton" class="btn btn-info btn-xl text-uppercase" type="button" data-universidad-id="UniversidadFranciscoVitoria" onclick="cargarDatosUniversidad(this)">
+                                    <i class="fas fa-search me-1"></i> Analizar
+                                </button>
+                            </div>
+                            <div class="palabras-interes">
+                                <h3>Tematicas de Interés</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-1">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-2">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parte-inferior">
+                            <h2 class="text-uppercase" id="tituloModal"></h2>
+                            <p class="text-muted" style="text-align: center; margin-bottom: 5px;">NPS en porcentage segun IA <i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="El NPS suele ser de -100 a 100 pero aqui se ha normalizado de 0 a 100"></i></p>
+                            <div class="progress" style="height: 20px;">
+                                <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p id="resultadoDesviacionEstandar" style="text-align: center; font-size: 18px; font-weight: bold; margin-top: 10px;"></p>
+                            <p id="resultadoNumeroFrases"></p>
+                            <div class="skill-container" style="margin-top: 30px;">
+                                <div class="skill">
+                                    <div id="number">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                    <div class="skill-name">Positividad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number2">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                    <div class="skill-name">Neutralidad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number3">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                    <div class="skill-name">Negatividad</div>
+                                </div>
+                            </div>
+                            <div id="resultadoMediaEstrellas" class="star-rating" style="font-size: 44px; color: black; margin-top: 20px;">
+                                <div id="ratingValue" style="font-size: 34px; font-weight: bold; vertical-align: middle;"></div>
+                            </div>
+                        </div>
+                        <div class="f mt-5" data-bs-dismiss="modal">
+                            <button type="button" class="btn btn-primary">CERRAR PESTAÑA</button>
+                        </div>
+                        <div id="scrollTarget" style="height: 1px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="universidad-modal modal fade" id="universidadModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times"></i></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="parte-superior">
+                            <h2 class="text-uppercase">UNIVERSIDAD COMPLUTENSE</h2>
+                            <p class="item-intro text-muted">Madrid</p>
+                            <a href="https://www.google.com/maps/place/Universidad+Complutense+de+Madrid/@40.4380604,-3.7803729,14z/data=!4m10!1m2!2m1!1suniversidad+complutense!3m6!1s0xd42283f5169b677:0xde649a1b2fe070df!8m2!3d40.4454368!4d-3.7299424!15sChd1bml2ZXJzaWRhZCBjb21wbHV0ZW5zZSIDiAEBWhkiF3VuaXZlcnNpZGFkIGNvbXBsdXRlbnNlkgEKdW5pdmVyc2l0eeABAA!16zL20vMG1mMXg?entry=ttu" target="_blank" class="d-block text-center my-3 map-icon">
+                               Maps <i class="bi bi-geo-alt-fill"></i>
+                            </a>
+                            <img class="img-fluid d-block mx-auto" src="static/images/complutense.jpg" alt="..." style="max-width: 100%; height: auto; width: 400px;">
+                            <p>Introduzca una palabra para analizar los comentarios relacionados con la misma o varias palabras o tematicas separadas por un -. Ejemplo: universidad publica-matematicas</p>
+                            <p>Algunos analisis pueden tardar varios minutos se recomienda no introducir muchas palabras juntas</p>
+                            <div class="input-group mb-3">
+                                
+                                <input type="text" class="form-control" id="filtroTexto3" placeholder="Introduce una palabra">
+                                <button id="actionButton" class="btn btn-info btn-xl text-uppercase" type="button" data-universidad-id="UniversidadComplutense" onclick="cargarDatosUniversidad3(this)">
+                                    <i class="fas fa-search me-1"></i>Analizar
+                                </button>
+                            </div>
+
+                            <div class="palabras-interes">
+                                <h3>Tematicas de Interés</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-3">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-4">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="parte-inferior">
+                            <h2 class="text-uppercase" id="tituloModal3"></h2> <!-- Sin texto aquí para que el jQuery lo maneje -->
+                            <p class="text-muted" style="text-align: center; margin-bottom: 5px;">NPS en porcentage segun IA <i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="El NPS suele ser de -100 a 100 pero aqui se ha normalizado de 0 a 100"></i></p> <!-- Descripción de la barra de progreso -->
+                            <div class="progress" style="height: 20px;">
+                                <div id="progressBar3" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p id="resultadoDesviacionEstandar3" style="text-align: center; font-size: 18px; font-weight: bold; margin-top: 10px;"></p>
+                            <p id="resultadoNumeroFrases"></p>
+                            <div class="skill-container" style="margin-top: 30px;">
+                                <div class="skill">
+                                    <div id="number4">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor1">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="skill-name">Positividad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number5">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor1">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="skill-name">Neutralidad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number6">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor1">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                    <div class="skill-name">Negatividad</div>
+                                </div>
+                            </div>
+                         
+                            <div id="resultadoMediaEstrellas3" class="star-rating" style="font-size: 34px; color: black; margin-top: 20px; font-weight: bold;">
+                                <div id="ratingValue3" style="font-size: 34px; font-weight: bold; vertical-align: middle;"></div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="f mt-5" data-bs-dismiss="modal">
+                            <button type="button" class="btn btn-primary">CERRAR PESTAÑA</button>
+                        </div>
+                        <div id="scrollTarget2" style="height: 1px;"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="universidad-modal modal fade" id="universidadModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times"></i></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="parte-superior">
+                            <h2 class="text-uppercase">UNIVERSIDAD EUROPEA</h2>
+                            <p class="item-intro text-muted">Madrid</p>
+                            <a href="https://www.google.com/maps/place/Universidad+Europea+de+Madrid/@40.3730607,-4.0715181,12z/data=!4m10!1m2!2m1!1suniversidad+europea!3m6!1s0xd419031a94d45e5:0x375a8b6ca7a1dc4c!8m2!3d40.3730607!4d-3.9190828!15sChN1bml2ZXJzaWRhZCBldXJvcGVhkgEScHJpdmF0ZV91bml2ZXJzaXR54AEA!16zL20vMGQxMDRo?entry=ttu" target="_blank" class="d-block text-center my-3 map-icon">
+                                Maps <i class="bi bi-geo-alt-fill"></i>
+                            </a>
+                            <img class="img-fluid d-block mx-auto" src="static/images/Europea.jpg" alt="..." style="max-width: 100%; height: auto; width: 400px;">
+                            <p>Introduzca una palabra para analizar los comentarios relacionados con la misma o varias palabras o tematicas separadas por un -. Ejemplo: universidad publica-matematicas</p>
+                            <p>Algunos analisis pueden tardar varios minutos se recomienda no introducir muchas palabras juntas</p>
+                            <div class="input-group mb-3">
+                                
+                                <input type="text" class="form-control" id="filtroTexto4" placeholder="Introduce una palabra">
+                                <button id="actionButton" class="btn btn-info btn-xl text-uppercase" type="button" data-universidad-id="UniversidadEuropea" onclick="cargarDatosUniversidad4(this)">
+                                    <i class="fas fa-search me-1"></i>Analizar
+                                </button>
+                            </div>
+
+                            <div class="palabras-interes">
+                                <h3>Tematicas de Interés</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-5">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-6">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="parte-inferior">
+                            <h2 class="text-uppercase" id="tituloModal4"></h2> <!-- Sin texto aquí para que el jQuery lo maneje -->
+                            <p class="text-muted" style="text-align: center; margin-bottom: 5px;">NPS en porcentage segun IA <i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="El NPS suele ser de -100 a 100 pero aqui se ha normalizado de 0 a 100"></i></p> <!-- Descripción de la barra de progreso -->
+                            <div class="progress" style="height: 20px;">
+                                <div id="progressBar4" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p id="resultadoDesviacionEstandar4" style="text-align: center; font-size: 18px; font-weight: bold; margin-top: 10px;"></p>
+                            <p id="resultadoNumeroFrases"></p>
+                            <div class="skill-container" style="margin-top: 30px;">
+                                <div class="skill">
+                                    <div id="number7">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor2">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle2" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="skill-name">Positividad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number8">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor2">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle2" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="skill-name">Neutralidad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number9">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor2">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle2" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                    <div class="skill-name">Negatividad</div>
+                                </div>
+                            </div>
+                                
+                            
+                            <div id="resultadoMediaEstrellas4" class="star-rating" style="font-size: 34px; color: black; margin-top: 20px; font-weight: bold;">
+                                <div id="ratingValue4" style="font-size: 34px; font-weight: bold; vertical-align: middle;"></div>
+                            </div>
+                            
+
+                        </div>
+                        <div class="f mt-5" data-bs-dismiss="modal">
+                            <button type="button" class="btn btn-primary">CERRAR PESTAÑA</button>
+                        </div>
+                        <div id="scrollTarget3" style="height: 1px;"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="universidad-modal modal fade" id="universidadModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times"></i></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="parte-superior">
+                            <h2 class="text-uppercase">UNIVERSIDAD AUTONOMA DE BARCELONA</h2>
+                            <p class="item-intro text-muted">Barcelona</p>
+                            <a href="https://www.google.es/maps/place/Universidad+Aut%C3%B3noma+de+Barcelona+(UAB)/@41.502142,2.0989827,17z/data=!3m2!4b1!5s0x12a4967f0b955863:0xa75832fcf2b7a27c!4m6!3m5!1s0x12a4942a9b7b8f63:0x8a51bd1095fe826d!8m2!3d41.5021421!4d2.1038536!16zL20vMGduNDg?entry=ttu" target="_blank" class="d-block text-center my-3 map-icon">
+                               Maps <i class="bi bi-geo-alt-fill"></i>
+                            </a>
+                            <img class="img-fluid d-block mx-auto" src="static/images/AutonomaBarcelona.jpg
+                            " alt="..." style="max-width: 100%; height: auto; width: 400px;">
+                            <p>Introduzca una palabra para analizar los comentarios relacionados con la misma o varias palabras o tematicas separadas por un -. Ejemplo: universidad publica-matematicas</p>
+                            <p>Algunos analisis pueden tardar varios minutos se recomienda no introducir muchas palabras juntas</p>
+                            <div class="input-group mb-3">
+                               
+                                <input type="text" class="form-control" id="filtroTexto5" placeholder="Introduce una palabra">
+                                <button id="actionButton" class="btn btn-info btn-xl text-uppercase" type="button" data-universidad-id="UniversidadAutonomaBarcelona" onclick="cargarDatosUniversidad5(this)">
+                                    <i class="fas fa-search me-1"></i>Analizar
+                                </button>
+                            </div>
+
+                            <div class="palabras-interes">
+                                <h3>Tematicas de Interés</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-7">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-8">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="parte-inferior">
+                            <h2 class="text-uppercase" id="tituloModal5"></h2> <!-- Sin texto aquí para que el jQuery lo maneje -->
+                            <p class="text-muted" style="text-align: center; margin-bottom: 5px;">NPS en porcentage segun IA <i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="El NPS suele ser de -100 a 100 pero aqui se ha normalizado de 0 a 100"></i></p> <!-- Descripción de la barra de progreso -->
+                            <div class="progress" style="height: 20px;">
+                                <div id="progressBar5" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p id="resultadoDesviacionEstandar5" style="text-align: center; font-size: 18px; font-weight: bold; margin-top: 10px;"></p>
+                            <p id="resultadoNumeroFrases"></p>
+                            <div class="skill-container" style="margin-top: 30px;">
+                                <div class="skill">
+                                    <div id="number10">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor3">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle3" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="skill-name">Positividad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number11">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor3">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle3" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="skill-name">Neutralidad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number12">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor3">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle3" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                    <div class="skill-name">Negatividad</div>
+                                </div>
+                            </div>
+                            <div id="resultadoMediaEstrellas5" class="star-rating" style="font-size: 34px; color: black; margin-top: 20px; font-weight: bold;">
+                                <div id="ratingValue5" style="font-size: 34px; font-weight: bold; vertical-align: middle;"></div>
+                            </div>
+                            
+
+                        </div>
+                        <div class="f mt-5" data-bs-dismiss="modal">
+                            <button type="button" class="btn btn-primary">CERRAR PESTAÑA</button>
+                        </div>
+                        <div id="scrollTarget4" style="height: 1px;"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="universidad-modal modal fade" id="universidadModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times"></i></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="parte-superior">
+                            <h2 class="text-uppercase">UNIVERSIDAD DE ZARAGOZA</h2>
+                            <p class="item-intro text-muted">Zaragoza</p>
+                            <a href="https://www.google.es/maps/place/Universidad+de+Zaragoza/@41.6420639,-0.9040814,17z/data=!3m1!4b1!4m6!3m5!1s0xd5914d1162df543:0xc1ddb61061eb90f1!8m2!3d41.6420639!4d-0.9015065!16zL20vMGIxam1n?entry=ttu" target="_blank" class="d-block text-center my-3 map-icon">
+                               Maps <i class="bi bi-geo-alt-fill"></i>
+                            </a>
+                            <img class="img-fluid d-block mx-auto" src="static/images/UniversidadZaragoza.jpg" alt="..." style="max-width: 100%; height: auto; width: 400px;">
+                            <p>Introduzca una palabra para analizar los comentarios relacionados con la misma o varias palabras o tematicas separadas por un -. Ejemplo: universidad publica-matematicas</p>
+                            <p>Algunos analisis pueden tardar varios minutos se recomienda no introducir muchas palabras juntas</p>
+                            <div class="input-group mb-3">
+                               
+                                <input type="text" class="form-control" id="filtroTexto6" placeholder="Introduce una palabra">
+                                <button id="actionButton" class="btn btn-info btn-xl text-uppercase" type="button" data-universidad-id="UniversidadDeZaragoza" onclick="cargarDatosUniversidad6(this)">
+                                    <i class="fas fa-search me-1"></i>Analizar
+                                </button>
+                            </div>
+
+                            <div class="palabras-interes">
+                                <h3>Tematicas de Interés</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-9">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-10">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="parte-inferior">
+                            <h2 class="text-uppercase" id="tituloModal6"></h2> <!-- Sin texto aquí para que el jQuery lo maneje -->
+                            <p class="text-muted" style="text-align: center; margin-bottom: 5px;">NPS en porcentage segun IA <i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="El NPS suele ser de -100 a 100 pero aqui se ha normalizado de 0 a 100"></i></p> <!-- Descripción de la barra de progreso -->
+                            <div class="progress" style="height: 20px;">
+                                <div id="progressBar6" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p id="resultadoDesviacionEstandar6" style="text-align: center; font-size: 18px; font-weight: bold; margin-top: 10px;"></p>
+                            <p id="resultadoNumeroFrases"></p>
+                            <div class="skill-container" style="margin-top: 30px;">
+                                <div class="skill">
+                                    <div id="number13">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor4">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle4" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="skill-name">Positividad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number14">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor4">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle4" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="skill-name">Neutralidad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number15">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor4">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle4" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                    <div class="skill-name">Negatividad</div>
+                                </div>
+                            </div>
+                            <div id="resultadoMediaEstrellas6" class="star-rating" style="font-size: 34px; color: black; margin-top: 20px; font-weight: bold;">
+                                <div id="ratingValue6" style="font-size: 34px; font-weight: bold; vertical-align: middle;"></div>
+                            </div>
+                        
+
+                        </div>
+                        <div class="f mt-5" data-bs-dismiss="modal">
+                            <button type="button" class="btn btn-primary">CERRAR PESTAÑA</button>
+                        </div>
+                        <div id="scrollTarget5" style="height: 1px;"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="universidad-modal modal fade" id="universidadModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times"></i></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="parte-superior">
+                            <h2 class="text-uppercase">UNIVERSIDAD AUTONOMA DE MADRID</h2>
+                            <p class="item-intro text-muted">Madrid</p>
+                            <a href="https://www.google.es/maps/place/Universidad+Aut%C3%B3noma+de+Madrid/@40.5466983,-3.6969368,17z/data=!3m1!4b1!4m6!3m5!1s0xd422be5542da9e9:0x8586e92e648f8b2d!8m2!3d40.5466983!4d-3.6943619!16zL20vMDYxNjVo?entry=ttu" target="_blank" class="d-block text-center my-3 map-icon">
+                               Maps <i class="bi bi-geo-alt-fill"></i>
+                            </a>
+                            <img class="img-fluid d-block mx-auto" src="static/images/AutonomaMadrid.jpg" alt="..." style="max-width: 100%; height: auto; width: 400px;">
+                            <p>Introduzca una palabra para analizar los comentarios relacionados con la misma o varias palabras o tematicas separadas por un -. Ejemplo: universidad publica-matematicas</p>
+                            <p>Algunos analisis pueden tardar varios minutos se recomienda no introducir muchas palabras juntas</p>
+                            <div class="input-group mb-3">
+                               
+                                <input type="text" class="form-control" id="filtroTexto7" placeholder="Introduce una palabra">
+                                <button id="actionButton" class="btn btn-info btn-xl text-uppercase" type="button" data-universidad-id="UniversidadAutonomaMadrid" onclick="cargarDatosUniversidad7(this)">
+                                    <i class="fas fa-search me-1"></i>Analizar
+                                </button>
+                            </div>
+
+                            <div class="palabras-interes">
+                                <h3>Tematicas de Interés</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-11">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-12">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="parte-inferior">
+                            <h2 class="text-uppercase" id="tituloModal7"></h2> <!-- Sin texto aquí para que el jQuery lo maneje -->
+                            <p class="text-muted" style="text-align: center; margin-bottom: 5px;">NPS en porcentage segun IA <i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="El NPS suele ser de -100 a 100 pero aqui se ha normalizado de 0 a 100"></i></p> <!-- Descripción de la barra de progreso -->
+                            <div class="progress" style="height: 20px;">
+                                <div id="progressBar7" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p id="resultadoDesviacionEstandar7" style="text-align: center; font-size: 18px; font-weight: bold; margin-top: 10px;"></p>
+                            <p id="resultadoNumeroFrases"></p>
+                            <div class="skill-container" style="margin-top: 30px;">
+                                <div class="skill">
+                                    <div id="number16">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor5">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle5" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="skill-name">Positividad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number17">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor5">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle5" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="skill-name">Neutralidad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number18">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor5">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle5" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                    <div class="skill-name">Negatividad</div>
+                                </div>
+                            </div>
+                            <div id="resultadoMediaEstrellas7" class="star-rating" style="font-size: 34px; color: black; margin-top: 20px; font-weight: bold;">
+                                <div id="ratingValue7" style="font-size: 34px; font-weight: bold; vertical-align: middle;"></div>
+                            </div>
+                
+
+                        </div>
+                        <div class="f mt-5" data-bs-dismiss="modal">
+                            <button type="button" class="btn btn-primary">CERRAR PESTAÑA</button>
+                        </div>
+                        <div id="scrollTarget6" style="height: 1px;"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="universidad-modal modal fade" id="universidadModal8" tabindex="-1" role="dialog" aria-hidden="true">
+    
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times"></i></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="parte-superior">
+                            <h2 class="text-uppercase">UNIVERSITAT DE VALÈNCIA</h2>
+                            <p class="item-intro text-muted">Valencia</p>
+                            <a href="https://www.google.es/maps/place/Universitat+de+Val%C3%A8ncia/@39.4793231,-0.367057,17z/data=!3m1!4b1!4m6!3m5!1s0xd60489a33e953c7:0x4a36fc47e674fa64!8m2!3d39.4793231!4d-0.3644821!16zL20vMGMzMjln?entry=ttu" target="_blank" class="d-block text-center my-3 map-icon">
+                               Maps <i class="bi bi-geo-alt-fill"></i>
+                            </a>
+                            <img class="img-fluid d-block mx-auto" src="static/images/UniversidadValencia.jpg" alt="..." style="max-width: 100%; height: auto; width: 400px;">
+                            <p>Introduzca una palabra para analizar los comentarios relacionados con la misma o varias palabras o tematicas separadas por un -. Ejemplo: universidad publica-matematicas</p>
+                            <p>Algunos analisis pueden tardar varios minutos se recomienda no introducir muchas palabras juntas</p>
+                            <div class="input-group mb-3">
+                                
+                                <input type="text" class="form-control" id="filtroTexto8" placeholder="Introduce una palabra">
+                                <button id="actionButton" class="btn btn-info btn-xl text-uppercase" type="button" data-universidad-id="UniversidadValencia" onclick="cargarDatosUniversidad8(this)">
+                                    <i class="fas fa-search me-1"></i>Analizar
+                                </button>
+                            </div>
+
+                            <div class="palabras-interes">
+                                <h3>Tematicas de Interés</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-13">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-14">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="parte-inferior">
+                            <h2 class="text-uppercase" id="tituloModal8"></h2> <!-- Sin texto aquí para que el jQuery lo maneje -->
+                            <p class="text-muted" style="text-align: center; margin-bottom: 5px;">NPS en porcentage segun IA <i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="El NPS suele ser de -100 a 100 pero aqui se ha normalizado de 0 a 100"></i></p> <!-- Descripción de la barra de progreso -->
+                            <div class="progress" style="height: 20px;">
+                                <div id="progressBar8" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p id="resultadoDesviacionEstandar8" style="text-align: center; font-size: 18px; font-weight: bold; margin-top: 10px;"></p>
+                            <p id="resultadoNumeroFrases"></p>
+                            <div class="skill-container" style="margin-top: 30px;">
+                                <div class="skill">
+                                    <div id="number19">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor6">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle6" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="skill-name">Positividad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number20">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor6">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle6" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="skill-name">Neutralidad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number21">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor6">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle6" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                    <div class="skill-name">Negatividad</div>
+                                </div>
+                            </div>
+                            <div id="resultadoMediaEstrellas8" class="star-rating" style="font-size: 34px; color: black; margin-top: 20px; font-weight: bold;">
+                                <div id="ratingValue8" style="font-size: 34px; font-weight: bold; vertical-align: middle;"></div>
+                            </div>
+                            
+
+                        </div>
+                        <div class="f mt-5" data-bs-dismiss="modal">
+                            <button type="button" class="btn btn-primary">CERRAR PESTAÑA</button>
+                        </div>
+                        <div id="scrollTarget7" style="height: 1px;"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="universidad-modal modal fade" id="universidadModal9" tabindex="-1" role="dialog" aria-hidden="true">
+    
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times"></i></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="parte-superior">
+                            <h2 class="text-uppercase">UNIVERSIDAD CARLOS III</h2>
+                            <p class="item-intro text-muted">Madrid</p>
+                            <a href="https://www.google.es/maps/place/Universidad+Carlos+III+de+Madrid+%7C+Campus+de+Legan%C3%A9s/@40.3324366,-3.7699809,17z/data=!3m1!4b1!4m6!3m5!1s0xd41898b1cc06b5b:0xaf0cadd098b516f8!8m2!3d40.3324367!4d-3.76511!16s%2Fm%2F0cvhzsb?entry=ttu" target="_blank" class="d-block text-center my-3 map-icon">
+                               Maps <i class="bi bi-geo-alt-fill"></i>
+                            </a>
+                            <img class="img-fluid d-block mx-auto" src="static/images/UniversidadCarlos.jpg" alt="..." style="max-width: 100%; height: auto; width: 400px;">
+                            <p>Introduzca una palabra para analizar los comentarios relacionados con la misma o varias palabras o tematicas separadas por un -. Ejemplo: universidad publica-matematicas</p>
+                            <p>Algunos analisis pueden tardar varios minutos se recomienda no introducir muchas palabras juntas</p>
+                            <div class="input-group mb-3">
+                                
+                                <input type="text" class="form-control" id="filtroTexto9" placeholder="Introduce una palabra">
+                                <button id="actionButton" class="btn btn-info btn-xl text-uppercase" type="button" data-universidad-id="UniversidadCarlos" onclick="cargarDatosUniversidad9(this)">
+                                    <i class="fas fa-search me-1"></i>Analizar
+                                </button>
+                            </div>
+
+                            <div class="palabras-interes">
+                                <h3>Tematicas de Interés</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-15">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-16">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="parte-inferior">
+                            <h2 class="text-uppercase" id="tituloModal9"></h2> <!-- Sin texto aquí para que el jQuery lo maneje -->
+                            <p class="text-muted" style="text-align: center; margin-bottom: 5px;">NPS en porcentage segun IA <i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="El NPS suele ser de -100 a 100 pero aqui se ha normalizado de 0 a 100"></i></p> <!-- Descripción de la barra de progreso -->
+                            <div class="progress" style="height: 20px;">
+                                <div id="progressBar9" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p id="resultadoDesviacionEstandar9" style="text-align: center; font-size: 18px; font-weight: bold; margin-top: 10px;"></p>
+                            <p id="resultadoNumeroFrases"></p>
+                            <div class="skill-container" style="margin-top: 30px;">
+                                <div class="skill">
+                                    <div id="number22">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor7">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle7" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="skill-name">Positividad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number23">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor7">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle7" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="skill-name">Neutralidad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number24">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor7">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle7" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                    <div class="skill-name">Negatividad</div>
+                                </div>
+                            </div>
+                            <div id="resultadoMediaEstrellas9" class="star-rating" style="font-size: 34px; color: black; margin-top: 20px; font-weight: bold;">
+                                <div id="ratingValue9" style="font-size: 34px; font-weight: bold; vertical-align: middle;"></div>
+                            </div>
+                            
+
+                        </div>
+                        <div class="f mt-5" data-bs-dismiss="modal">
+                            <button type="button" class="btn btn-primary">CERRAR PESTAÑA</button>
+                        </div>
+                        <div id="scrollTarget9" style="height: 1px;"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="universidad-modal modal fade" id="universidadModal10" tabindex="-1" role="dialog" aria-hidden="true">
+    
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times"></i></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="parte-superior">
+                            <h2 class="text-uppercase">UNIVERSIDAD NEBRIJA</h2>
+                            <p class="item-intro text-muted">Madrid</p>
+                            <a href="https://www.google.es/maps/place/Universidad+Nebrija/@40.4292365,-3.7154633,17z/data=!3m1!4b1!4m6!3m5!1s0xd4229b4b91ca3af:0x72653ab1231d98c!8m2!3d40.4292365!4d-3.7128884!16s%2Fg%2F1yl57k75_?entry=ttu" target="_blank" class="d-block text-center my-3 map-icon">
+                               Maps <i class="bi bi-geo-alt-fill"></i>
+                            </a>
+                            <img class="img-fluid d-block mx-auto" src="static/images/UniversidadNebrija.jpg" alt="..." style="max-width: 100%; height: auto; width: 400px;">
+                            <p>Introduzca una palabra para analizar los comentarios relacionados con la misma o varias palabras o tematicas separadas por un -. Ejemplo: universidad publica-matematicas</p>
+                            <p>Algunos analisis pueden tardar varios minutos se recomienda no introducir muchas palabras juntas</p>
+                            <div class="input-group mb-3">
+                                
+           
+                                
+                                <input type="text" class="form-control" id="filtroTexto10" placeholder="Introduce una palabra">
+                                <button id="actionButton" class="btn btn-info btn-xl text-uppercase" type="button" data-universidad-id="UniversidadNebrija" onclick="cargarDatosUniversidad10(this)">
+                                    <i class="fas fa-search me-1"></i>Analizar
+                                </button>
+                            </div>
+
+                            <div class="palabras-interes">
+                                <h3>Tematicas de Interés</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-17">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul id="lista-interes-18">
+                                            <!-- Los elementos <li> se añadirán aquí -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="parte-inferior">
+                            <h2 class="text-uppercase" id="tituloModal10"></h2> <!-- Sin texto aquí para que el jQuery lo maneje -->
+                            <p class="text-muted" style="text-align: center; margin-bottom: 5px;">NPS en porcentage segun IA <i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="El NPS suele ser de -100 a 100 pero aqui se ha normalizado de 0 a 100"></i></p> <!-- Descripción de la barra de progreso -->
+                            <div class="progress" style="height: 20px;">
+                                <div id="progressBar10" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p id="resultadoDesviacionEstandar10" style="text-align: center; font-size: 18px; font-weight: bold; margin-top: 10px;"></p>
+                            <p id="resultadoNumeroFrases"></p>
+                            <div class="skill-container" style="margin-top: 30px;">
+                                <div class="skill">
+                                    <div id="number25">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor8">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle8" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="skill-name">Positividad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number26">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor8">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle8" cx="80" cy="80" r="70" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="skill-name">Neutralidad</div>
+                                </div>
+                                <div class="skill">
+                                    <div id="number27">0%</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor8">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle id="progress-circle8" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                    <div class="skill-name">Negatividad</div>
+                                </div>
+                            </div>
+                            <div id="resultadoMediaEstrellas10" class="star-rating" style="font-size: 34px; color: black; margin-top: 20px; font-weight: bold;">
+                                <div id="ratingValue10" style="font-size: 34px; font-weight: bold; vertical-align: middle;"></div>
+                            </div>
+                            
+
+                        </div>
+                        <div class="f mt-5" data-bs-dismiss="modal">
+                            <button type="button" class="btn btn-primary">CERRAR PESTAÑA</button>
+                        </div>
+                        <div id="scrollTarget10" style="height: 1px;"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+ <!-- JS codigo -->
+<script src="https://www.google.com/jsapi"></script>
+<script>
+
+    // Aqui comienza el resto del codigo JS
+    document.addEventListener("DOMContentLoaded", function() {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    });
+        // Inicializar tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+   
+        
+        function cargarDatosUniversidad(buttonElement) {
+            var filtroInput = document.getElementById('filtroTexto');
+            var filtro = filtroInput.value.trim();
+            if (!filtro) {
+                alert('Por favor, introduce una palabra clave para filtrar.');
+                return;
+            }
+        
+            var universidadId = buttonElement.getAttribute('data-universidad-id');
+            var originalHtml = buttonElement.innerHTML; // Guardar el HTML original del botón
+            buttonElement.setAttribute('data-original-html', originalHtml); // Almacenar el HTML original
+            buttonElement.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Cargando...'; // Cambiar HTML del botón
+            buttonElement.disabled = true;
+            resetCircles(); 
+            updateProgressBar(0.01);
+            $.ajax({
+                url: `http://127.0.0.1:8000/analizar-universidad/${universidadId}/?filtro=${encodeURIComponent(filtro)}`,
+                type: 'get',
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status && response.status === 'error') {
+                        alert(response.message); // Mostrar mensaje de error
+                    } else {
+                        $('#tituloModal').html("<strong>RESULTADOS DEL ANÁLISIS</strong>");
+                        updateProgressBar(response.nps);
+                        animateProgressCircle('number', response.media_positivos_generales);
+                        animateProgressCircle('number2', response.media_neutrales);
+                        animateProgressCircle('number3', response.media_negativos);
+                        updateStarRating(response.media_estrellas);
+        
+                        // Definir el contenido del texto y el icono
+                        var desviacionText = "Desviación Estándar: " + response.desviacion_estandar.toFixed(2);
+                        var iconHtml = '<i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Cuanto más grande sea este número mas diferentes entre si son las opiniones de las reseñas analizadas, el valor va de 0-100"></i>';
+        
+                        // Añadir el texto y el icono al elemento
+                        $('#resultadoDesviacionEstandar').html(desviacionText + " " + iconHtml);
+        
+                        // Inicializar el tooltip para el nuevo icono
+                        $(function () {
+                            $('[data-bs-toggle="tooltip"]').tooltip();
+                        });
+        
+                        // Scroll to results
+                        scrollToResults();
+        
+                        $('#universidadModal2').modal('show');
+                    }
+                    buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                    buttonElement.disabled = false;
+                },
+                error: function() {
+                    alert('Error al cargar los datos');
+                    buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                    buttonElement.disabled = false;
+                }
+            });
+        }
+        
+        function scrollToResults() {
+            var resultsElement = document.getElementById('scrollTarget');
+            if (resultsElement) {
+                resultsElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        
+        
+        
+        
+    
+    function cargarDatosUniversidad3(buttonElement) {
+        var filtroInput = document.getElementById('filtroTexto3');
+        var filtro = filtroInput.value.trim();
+        if (!filtro) {
+            alert('Por favor, introduce una palabra clave para filtrar.');
+            return;
+        }
+    
+        var universidadId = buttonElement.getAttribute('data-universidad-id');
+        var originalHtml = buttonElement.innerHTML; // Guardar el HTML original del botón
+    
+        buttonElement.setAttribute('data-original-html', originalHtml); // Almacenar el HTML original
+        buttonElement.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Cargando...'; // Cambiar HTML del botón
+        buttonElement.disabled = true;
+        resetCircles(); 
+        updateProgressBar3(0.01);
+        $.ajax({
+            url: `/analizar-universidad/${universidadId}/?filtro=${encodeURIComponent(filtro)}`,
+            type: 'get',
+            dataType: 'json',
+            success: function(response) {
+                if (response.status && response.status === 'error') {
+                    alert(response.message); // Mostrar mensaje de error
+                } else {
+                    $('#tituloModal3').html("<strong>RESULTADOS DEL ANÁLISIS</strong>");
+                    updateProgressBar3(response.nps);
+                    animateProgressCircle('number4', response.media_positivos_generales);
+                    animateProgressCircle('number5', response.media_neutrales);
+                    animateProgressCircle('number6', response.media_negativos);
+                    updateStarRating3(response.media_estrellas);
+    
+                    // Definir el contenido del texto y el icono
+                    var desviacionText = "Desviación Estándar: " + response.desviacion_estandar.toFixed(2);
+                    var iconHtml = '<i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Cuanto más grande sea este número mas diferentes entre si son las opiniones de las reseñas analizadas, el valor va de 0-100"></i>';
+    
+                    // Añadir el texto y el icono al elemento
+                    $('#resultadoDesviacionEstandar3').html(desviacionText + " " + iconHtml);
+    
+                    // Inicializar el tooltip para el nuevo icono
+                    $(function () {
+                        $('[data-bs-toggle="tooltip"]').tooltip();
+                    });
+                    scrollToResults2();
+                    $('#universidadModal3').modal('show');
+                }
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            },
+            error: function() {
+                alert('Error al cargar los datos');
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            }
+        });
+    }
+
+    function scrollToResults2() {
+        var resultsElement = document.getElementById('scrollTarget2');
+        if (resultsElement) {
+            resultsElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    
+    function cargarDatosUniversidad4(buttonElement) {
+        var filtroInput = document.getElementById('filtroTexto4');
+        var filtro = filtroInput.value.trim();
+        if (!filtro) {
+            alert('Por favor, introduce una palabra clave para filtrar.');
+            return;
+        }
+    
+        var universidadId = buttonElement.getAttribute('data-universidad-id');
+        var originalHtml = buttonElement.innerHTML; // Guardar el HTML original del botón
+        buttonElement.setAttribute('data-original-html', originalHtml); // Almacenar el HTML original
+        buttonElement.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Cargando...'; // Cambiar HTML del botón
+        buttonElement.disabled = true;
+        resetCircles(); 
+        updateProgressBar4(0.01);
+        $.ajax({
+            url: `/analizar-universidad/${universidadId}/?filtro=${encodeURIComponent(filtro)}`,
+            type: 'get',
+            dataType: 'json',
+            success: function(response) {
+                if (response.status && response.status === 'error') {
+                    alert(response.message); // Mostrar mensaje de error
+                } else {
+                    $('#tituloModal4').html("<strong>RESULTADOS DEL ANÁLISIS</strong>");
+                    updateProgressBar4(response.nps);
+                    animateProgressCircle('number7', response.media_positivos_generales);
+                    animateProgressCircle('number8', response.media_neutrales);
+                    animateProgressCircle('number9', response.media_negativos);
+                    updateStarRating4(response.media_estrellas);
+    
+                    // Definir el contenido del texto y el icono
+                    var desviacionText = "Desviación Estándar: " + response.desviacion_estandar.toFixed(2);
+                    var iconHtml = '<i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Cuanto más grande sea este número mas diferentes entre si son las opiniones de las reseñas analizadas, el valor va de 0-100"></i>';
+    
+                    // Añadir el texto y el icono al elemento
+                    $('#resultadoDesviacionEstandar4').html(desviacionText + " " + iconHtml);
+    
+                    // Inicializar el tooltip para el nuevo icono
+                    $(function () {
+                        $('[data-bs-toggle="tooltip"]').tooltip();
+                    });
+                    scrollToResults3();
+                    $('#universidadModal4').modal('show');
+                }
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            },
+            error: function() {
+                alert('Error al cargar los datos');
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            }
+        });
+    }
+    function scrollToResults3() {
+        var resultsElement = document.getElementById('scrollTarget3');
+        if (resultsElement) {
+            resultsElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    
+    function cargarDatosUniversidad5(buttonElement) {
+        var filtroInput = document.getElementById('filtroTexto5');
+        var filtro = filtroInput.value.trim();
+        if (!filtro) {
+            alert('Por favor, introduce una palabra clave para filtrar.');
+            return;
+        }
+    
+        var universidadId = buttonElement.getAttribute('data-universidad-id');
+        var originalHtml = buttonElement.innerHTML; // Guardar el HTML original del botón
+        buttonElement.setAttribute('data-original-html', originalHtml); // Almacenar el HTML original
+        buttonElement.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Cargando...'; // Cambiar HTML del botón
+        buttonElement.disabled = true;
+        resetCircles(); 
+        updateProgressBar5(0.01);
+        $.ajax({
+            url: `/analizar-universidad/${universidadId}/?filtro=${encodeURIComponent(filtro)}`,
+            type: 'get',
+            dataType: 'json',
+            success: function(response) {
+                if (response.status && response.status === 'error') {
+                    alert(response.message); // Mostrar mensaje de error
+                } else {
+                    $('#tituloModal5').html("<strong>RESULTADOS DEL ANÁLISIS</strong>");
+                    updateProgressBar5(response.nps);
+                    animateProgressCircle('number10', response.media_positivos_generales);
+                    animateProgressCircle('number11', response.media_neutrales);
+                    animateProgressCircle('number12', response.media_negativos);
+                    updateStarRating5(response.media_estrellas);
+    
+                    // Definir el contenido del texto y el icono
+                    var desviacionText = "Desviación Estándar: " + response.desviacion_estandar.toFixed(2);
+                    var iconHtml = '<i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Cuanto más grande sea este número mas diferentes entre si son las opiniones de las reseñas analizadas, el valor va de 0-100"></i>';
+    
+                    // Añadir el texto y el icono al elemento
+                    $('#resultadoDesviacionEstandar5').html(desviacionText + " " + iconHtml);
+    
+                    // Inicializar el tooltip para el nuevo icono
+                    $(function () {
+                        $('[data-bs-toggle="tooltip"]').tooltip();
+                    });
+                    scrollToResults4();
+                    $('#universidadModal5').modal('show');
+                }
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            },
+            error: function() {
+                alert('Error al cargar los datos');
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            }
+        });
+    }
+    function scrollToResults4() {
+        var resultsElement = document.getElementById('scrollTarget4');
+        if (resultsElement) {
+            resultsElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    
+    function cargarDatosUniversidad6(buttonElement) {
+        var filtroInput = document.getElementById('filtroTexto6');
+        var filtro = filtroInput.value.trim();
+        if (!filtro) {
+            alert('Por favor, introduce una palabra clave para filtrar.');
+            return;
+        }
+    
+        var universidadId = buttonElement.getAttribute('data-universidad-id');
+        var originalHtml = buttonElement.innerHTML; // Guardar el HTML original del botón
+        buttonElement.setAttribute('data-original-html', originalHtml); // Almacenar el HTML original
+        buttonElement.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Cargando...'; // Cambiar HTML del botón
+        buttonElement.disabled = true;
+        resetCircles();
+        updateProgressBar6(0.01); 
+        $.ajax({
+            url: `/analizar-universidad/${universidadId}/?filtro=${encodeURIComponent(filtro)}`,
+            type: 'get',
+            dataType: 'json',
+            success: function(response) {
+                if (response.status && response.status === 'error') {
+                    alert(response.message); // Mostrar mensaje de error
+                } else {
+                    $('#tituloModal6').html("<strong>RESULTADOS DEL ANÁLISIS</strong>");
+                    updateProgressBar6(response.nps);
+                    animateProgressCircle('number13', response.media_positivos_generales);
+                    animateProgressCircle('number14', response.media_neutrales);
+                    animateProgressCircle('number15', response.media_negativos);
+                    updateStarRating6(response.media_estrellas);
+    
+                    // Definir el contenido del texto y el icono
+                    var desviacionText = "Desviación Estándar: " + response.desviacion_estandar.toFixed(2);
+                    var iconHtml = '<i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Cuanto más grande sea este número mas diferentes entre si son las opiniones de las reseñas analizadas, el valor va de 0-100"></i>';
+    
+                    // Añadir el texto y el icono al elemento
+                    $('#resultadoDesviacionEstandar6').html(desviacionText + " " + iconHtml);
+    
+                    // Inicializar el tooltip para el nuevo icono
+                    $(function () {
+                        $('[data-bs-toggle="tooltip"]').tooltip();
+                    });
+                    scrollToResults5();
+                    $('#universidadModal6').modal('show');
+                }
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            },
+            error: function() {
+                alert('Error al cargar los datos');
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            }
+        });
+    }
+    function scrollToResults5() {
+        var resultsElement = document.getElementById('scrollTarget5');
+        if (resultsElement) {
+            resultsElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    
+    
+    function cargarDatosUniversidad7(buttonElement) {
+        var filtroInput = document.getElementById('filtroTexto7');
+        var filtro = filtroInput.value.trim();
+        if (!filtro) {
+            alert('Por favor, introduce una palabra clave para filtrar.');
+            return;
+        }
+    
+        var universidadId = buttonElement.getAttribute('data-universidad-id');
+        var originalHtml = buttonElement.innerHTML; // Guardar el HTML original del botón
+        buttonElement.setAttribute('data-original-html', originalHtml); // Almacenar el HTML original
+        buttonElement.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Cargando...'; // Cambiar HTML del botón
+        buttonElement.disabled = true;
+        resetCircles(); 
+        updateProgressBar7(0.01);
+        $.ajax({
+            url: `/analizar-universidad/${universidadId}/?filtro=${encodeURIComponent(filtro)}`,
+            type: 'get',
+            dataType: 'json',
+            success: function(response) {
+                if (response.status && response.status === 'error') {
+                    alert(response.message); // Mostrar mensaje de error
+                } else {
+                    $('#tituloModal7').html("<strong>RESULTADOS DEL ANÁLISIS</strong>");
+                    updateProgressBar7(response.nps);
+                    animateProgressCircle('number16', response.media_positivos_generales);
+                    animateProgressCircle('number17', response.media_neutrales);
+                    animateProgressCircle('number18', response.media_negativos);
+                    updateStarRating7(response.media_estrellas);
+    
+                    // Definir el contenido del texto y el icono
+                    var desviacionText = "Desviación Estándar: " + response.desviacion_estandar.toFixed(2);
+                    var iconHtml = '<i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Cuanto más grande sea este número mas diferentes entre si son las opiniones de las reseñas analizadas, el valor va de 0-100"></i>';
+    
+                    // Añadir el texto y el icono al elemento
+                    $('#resultadoDesviacionEstandar7').html(desviacionText + " " + iconHtml);
+    
+                    // Inicializar el tooltip para el nuevo icono
+                    $(function () {
+                        $('[data-bs-toggle="tooltip"]').tooltip();
+                    });
+                    scrollToResults6();
+                    $('#universidadModal7').modal('show');
+                }
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            },
+            error: function() {
+                alert('Error al cargar los datos');
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            }
+        });
+    }
+    function scrollToResults6() {
+        var resultsElement = document.getElementById('scrollTarget6');
+        if (resultsElement) {
+            resultsElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    
+    function cargarDatosUniversidad8(buttonElement) {
+        var filtroInput = document.getElementById('filtroTexto8');
+        var filtro = filtroInput.value.trim();
+        if (!filtro) {
+            alert('Por favor, introduce una palabra clave para filtrar.');
+            return;
+        }
+    
+        var universidadId = buttonElement.getAttribute('data-universidad-id');
+        var originalHtml = buttonElement.innerHTML; // Guardar el HTML original del botón
+        buttonElement.setAttribute('data-original-html', originalHtml); // Almacenar el HTML original
+        buttonElement.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Cargando...'; // Cambiar HTML del botón
+        buttonElement.disabled = true;
+        resetCircles(); 
+        updateProgressBar8(0.01);
+        $.ajax({
+            url: `/analizar-universidad/${universidadId}/?filtro=${encodeURIComponent(filtro)}`,
+            type: 'get',
+            dataType: 'json',
+            success: function(response) {
+                if (response.status && response.status === 'error') {
+                    alert(response.message); // Mostrar mensaje de error
+                } else {
+                    $('#tituloModal8').html("<strong>RESULTADOS DEL ANÁLISIS</strong>");
+                    updateProgressBar8(response.nps);
+                    animateProgressCircle('number19', response.media_positivos_generales);
+                    animateProgressCircle('number20', response.media_neutrales);
+                    animateProgressCircle('number21', response.media_negativos);
+                    updateStarRating8(response.media_estrellas);
+    
+                    // Definir el contenido del texto y el icono
+                    var desviacionText = "Desviación Estándar: " + response.desviacion_estandar.toFixed(2);
+                    var iconHtml = '<i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Cuanto más grande sea este número mas diferentes entre si son las opiniones de las reseñas analizadas, el valor va de 0-100"></i>';
+    
+                    // Añadir el texto y el icono al elemento
+                    $('#resultadoDesviacionEstandar8').html(desviacionText + " " + iconHtml);
+    
+                    // Inicializar el tooltip para el nuevo icono
+                    $(function () {
+                        $('[data-bs-toggle="tooltip"]').tooltip();
+                    });
+                    scrollToResults7();
+                    $('#universidadModal8').modal('show');
+                }
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            },
+            error: function() {
+                alert('Error al cargar los datos');
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            }
+        });
+    }
+    function scrollToResults7() {
+        var resultsElement = document.getElementById('scrollTarget7');
+        if (resultsElement) {
+            resultsElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    
+    
+    function cargarDatosUniversidad8(buttonElement) {
+        var filtroInput = document.getElementById('filtroTexto8');
+        var filtro = filtroInput.value.trim();
+        if (!filtro) {
+            alert('Por favor, introduce una palabra clave para filtrar.');
+            return;
+        }
+    
+        var universidadId = buttonElement.getAttribute('data-universidad-id');
+        var originalHtml = buttonElement.innerHTML; // Guardar el HTML original del botón
+        buttonElement.setAttribute('data-original-html', originalHtml); // Almacenar el HTML original
+        buttonElement.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Cargando...'; // Cambiar HTML del botón
+        buttonElement.disabled = true;
+        resetCircles(); 
+        updateProgressBar9(0.01);
+        $.ajax({
+            url: `/analizar-universidad/${universidadId}/?filtro=${encodeURIComponent(filtro)}`,
+            type: 'get',
+            dataType: 'json',
+            success: function(response) {
+                if (response.status && response.status === 'error') {
+                    alert(response.message); // Mostrar mensaje de error
+                } else {
+                    $('#tituloModal8').html("<strong>RESULTADOS DEL ANÁLISIS</strong>");
+                    updateProgressBar8(response.nps);
+                    animateProgressCircle('number19', response.media_positivos_generales);
+                    animateProgressCircle('number20', response.media_neutrales);
+                    animateProgressCircle('number21', response.media_negativos);
+                    updateStarRating8(response.media_estrellas);
+    
+                    // Definir el contenido del texto y el icono
+                    var desviacionText = "Desviación Estándar: " + response.desviacion_estandar.toFixed(2);
+                    var iconHtml = '<i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Cuanto más grande sea este número mas diferentes entre si entre si son las opiniones de las reseñas analizadas, el valor va de 0-100"></i>';
+    
+                    // Añadir el texto y el icono al elemento
+                    $('#resultadoDesviacionEstandar8').html(desviacionText + " " + iconHtml);
+    
+                    // Inicializar el tooltip para el nuevo icono
+                    $(function () {
+                        $('[data-bs-toggle="tooltip"]').tooltip();
+                    });
+                    scrollToResults8();
+                    $('#universidadModal8').modal('show');
+                }
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            },
+            error: function() {
+                alert('Error al cargar los datos');
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            }
+        });
+    }
+    function scrollToResults8() {
+        var resultsElement = document.getElementById('scrollTarget8');
+        if (resultsElement) {
+            resultsElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    function cargarDatosUniversidad9(buttonElement) {
+        var filtroInput = document.getElementById('filtroTexto9');
+        var filtro = filtroInput.value.trim();
+        if (!filtro) {
+            alert('Por favor, introduce una palabra clave para filtrar.');
+            return;
+        }
+    
+        var universidadId = buttonElement.getAttribute('data-universidad-id');
+        var originalHtml = buttonElement.innerHTML; // Guardar el HTML original del botón
+        buttonElement.setAttribute('data-original-html', originalHtml); // Almacenar el HTML original
+        buttonElement.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Cargando...'; // Cambiar HTML del botón
+        buttonElement.disabled = true;
+        resetCircles(); 
+        updateProgressBar9(0.01);
+        $.ajax({
+            url: `/analizar-universidad/${universidadId}/?filtro=${encodeURIComponent(filtro)}`,
+            type: 'get',
+            dataType: 'json',
+            success: function(response) {
+                if (response.status && response.status === 'error') {
+                    alert(response.message); // Mostrar mensaje de error
+                } else {
+                    $('#tituloModal10').html("<strong>RESULTADOS DEL ANÁLISIS</strong>");
+                    updateProgressBar9(response.nps);
+                    animateProgressCircle('number22', response.media_positivos_generales);
+                    animateProgressCircle('number23', response.media_neutrales);
+                    animateProgressCircle('number24', response.media_negativos);
+                    updateStarRating9(response.media_estrellas);
+    
+                    // Definir el contenido del texto y el icono
+                    var desviacionText = "Desviación Estándar: " + response.desviacion_estandar.toFixed(2);
+                    var iconHtml = '<i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Cuanto más grande sea este número mas diferentes son las opiniones de las reseñas analizadas, el valor va de 0-100"></i>';
+    
+                    // Añadir el texto y el icono al elemento
+                    $('#resultadoDesviacionEstandar9').html(desviacionText + " " + iconHtml);
+    
+                    // Inicializar el tooltip para el nuevo icono
+                    $(function () {
+                        $('[data-bs-toggle="tooltip"]').tooltip();
+                    });
+                    scrollToResults9();
+                    $('#universidadModal9').modal('show');
+                }
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            },
+            error: function() {
+                alert('Error al cargar los datos');
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            }
+        });
+    }
+
+    function scrollToResults9() {
+        var resultsElement = document.getElementById('scrollTarget9');
+        if (resultsElement) {
+            resultsElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    function cargarDatosUniversidad10(buttonElement) {
+        var filtroInput = document.getElementById('filtroTexto10');
+        var filtro = filtroInput.value.trim();
+        if (!filtro) {
+            alert('Por favor, introduce una palabra clave para filtrar.');
+            return;
+        }
+    
+        var universidadId = buttonElement.getAttribute('data-universidad-id');
+        var originalHtml = buttonElement.innerHTML; // Guardar el HTML original del botón
+        buttonElement.setAttribute('data-original-html', originalHtml); // Almacenar el HTML original
+        buttonElement.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Cargando...'; // Cambiar HTML del botón
+        buttonElement.disabled = true;
+        resetCircles(); 
+        updateProgressBar10(0.01);
+        $.ajax({
+            url: `/analizar-universidad/${universidadId}/?filtro=${encodeURIComponent(filtro)}`,
+            type: 'get',
+            dataType: 'json',
+            success: function(response) {
+                if (response.status && response.status === 'error') {
+                    alert(response.message); // Mostrar mensaje de error
+                } else {
+                    $('#tituloModal10').html("<strong>RESULTADOS DEL ANÁLISIS</strong>");
+                    updateProgressBar10(response.nps);
+                    animateProgressCircle('number25', response.media_positivos_generales);
+                    animateProgressCircle('number26', response.media_neutrales);
+                    animateProgressCircle('number27', response.media_negativos);
+                    updateStarRating10(response.media_estrellas);
+    
+                    // Definir el contenido del texto y el icono
+                    var desviacionText = "Desviación Estándar: " + response.desviacion_estandar.toFixed(2);
+                    var iconHtml = '<i class="bi bi-info-circle highlight-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Cuanto más grande sea este número mas diferentes son las opiniones de las reseñas analizadas, el valor va de 0-100"></i>';
+    
+                    // Añadir el texto y el icono al elemento
+                    $('#resultadoDesviacionEstandar10').html(desviacionText + " " + iconHtml);
+    
+                    // Inicializar el tooltip para el nuevo icono
+                    $(function () {
+                        $('[data-bs-toggle="tooltip"]').tooltip();
+                    });
+                    scrollToResults10();
+                    $('#universidadModal10').modal('show');
+                }
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            },
+            error: function() {
+                alert('Error al cargar los datos');
+                buttonElement.innerHTML = buttonElement.getAttribute('data-original-html'); // Restaurar HTML del botón
+                buttonElement.disabled = false;
+            }
+        });
+    }
+    
+    function scrollToResults10() {
+        var resultsElement = document.getElementById('scrollTarget10');
+        if (resultsElement) {
+            resultsElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+
+    function updateProgressBar(percent) {
+        var $bar = $('#progressBar');
+        var percentage = Math.round(percent);
+        var displayPercentage;
+        var textPercentage;
+    
+        if (percent === 0.01) {
+            displayPercentage = 0;
+            textPercentage = 0;
+        } else {
+            // Si el porcentaje es 0, asignar un ancho mínimo
+            displayPercentage = (percentage === 0) ? 2 : percentage;
+            textPercentage = percentage;
+        }
+        
+        $bar.css('width', displayPercentage + '%');
+        $bar.removeClass('bg-success bg-danger bg-warning');
+    
+        if (percentage < 50) {
+            $bar.addClass('bg-danger');
+        } else if (percentage > 50) {
+            $bar.addClass('bg-success');
+        } else {
+            $bar.addClass('bg-warning');
+        }
+    
+        // Mostrar el porcentaje ajustado en el texto
+        $bar.text(textPercentage + '%');
+    }
+    
+    function updateProgressBar3(percent) {
+        var $bar = $('#progressBar3');
+        var percentage = Math.round(percent);
+        var displayPercentage;
+        var textPercentage;
+    
+        if (percent === 0.01) {
+            displayPercentage = 0;
+            textPercentage = 0;
+        } else {
+            // Si el porcentaje es 0, asignar un ancho mínimo
+            displayPercentage = (percentage === 0) ? 2 : percentage;
+            textPercentage = percentage;
+        }
+        
+        $bar.css('width', displayPercentage + '%');
+        $bar.removeClass('bg-success bg-danger bg-warning');
+    
+        if (percentage < 50) {
+            $bar.addClass('bg-danger');
+        } else if (percentage > 50) {
+            $bar.addClass('bg-success');
+        } else {
+            $bar.addClass('bg-warning');
+        }
+    
+        // Mostrar el porcentaje ajustado en el texto
+        $bar.text(textPercentage + '%');
+    }
+    
+    function updateProgressBar4(percent) {
+        var $bar = $('#progressBar4');
+        var percentage = Math.round(percent);
+        var displayPercentage;
+        var textPercentage;
+    
+        if (percent === 0.01) {
+            displayPercentage = 0;
+            textPercentage = 0;
+        } else {
+            // Si el porcentaje es 0, asignar un ancho mínimo
+            displayPercentage = (percentage === 0) ? 2 : percentage;
+            textPercentage = percentage;
+        }
+        
+        $bar.css('width', displayPercentage + '%');
+        $bar.removeClass('bg-success bg-danger bg-warning');
+    
+        if (percentage < 50) {
+            $bar.addClass('bg-danger');
+        } else if (percentage > 50) {
+            $bar.addClass('bg-success');
+        } else {
+            $bar.addClass('bg-warning');
+        }
+    
+        // Mostrar el porcentaje ajustado en el texto
+        $bar.text(textPercentage + '%');
+    }
+    
+    function updateProgressBar5(percent) {
+        var $bar = $('#progressBar5');
+        var percentage = Math.round(percent);
+        var displayPercentage;
+        var textPercentage;
+    
+        if (percent === 0.01) {
+            displayPercentage = 0;
+            textPercentage = 0;
+        } else {
+            // Si el porcentaje es 0, asignar un ancho mínimo
+            displayPercentage = (percentage === 0) ? 2 : percentage;
+            textPercentage = percentage;
+        }
+        
+        $bar.css('width', displayPercentage + '%');
+        $bar.removeClass('bg-success bg-danger bg-warning');
+    
+        if (percentage < 50) {
+            $bar.addClass('bg-danger');
+        } else if (percentage > 50) {
+            $bar.addClass('bg-success');
+        } else {
+            $bar.addClass('bg-warning');
+        }
+    
+        // Mostrar el porcentaje ajustado en el texto
+        $bar.text(textPercentage + '%');
+    }
+    
+    function updateProgressBar6(percent) {
+        var $bar = $('#progressBar6');
+        var percentage = Math.round(percent);
+        var displayPercentage;
+        var textPercentage;
+    
+        if (percent === 0.01) {
+            displayPercentage = 0;
+            textPercentage = 0;
+        } else {
+            // Si el porcentaje es 0, asignar un ancho mínimo
+            displayPercentage = (percentage === 0) ? 2 : percentage;
+            textPercentage = percentage;
+        }
+        
+        $bar.css('width', displayPercentage + '%');
+        $bar.removeClass('bg-success bg-danger bg-warning');
+    
+        if (percentage < 50) {
+            $bar.addClass('bg-danger');
+        } else if (percentage > 50) {
+            $bar.addClass('bg-success');
+        } else {
+            $bar.addClass('bg-warning');
+        }
+    
+        // Mostrar el porcentaje ajustado en el texto
+        $bar.text(textPercentage + '%');
+    }
+    
+    function updateProgressBar7(percent) {
+        var $bar = $('#progressBar7');
+        var percentage = Math.round(percent);
+        var displayPercentage;
+        var textPercentage;
+    
+        if (percent === 0.01) {
+            displayPercentage = 0;
+            textPercentage = 0;
+        } else {
+            // Si el porcentaje es 0, asignar un ancho mínimo
+            displayPercentage = (percentage === 0) ? 2 : percentage;
+            textPercentage = percentage;
+        }
+        
+        $bar.css('width', displayPercentage + '%');
+        $bar.removeClass('bg-success bg-danger bg-warning');
+    
+        if (percentage < 50) {
+            $bar.addClass('bg-danger');
+        } else if (percentage > 50) {
+            $bar.addClass('bg-success');
+        } else {
+            $bar.addClass('bg-warning');
+        }
+    
+        // Mostrar el porcentaje ajustado en el texto
+        $bar.text(textPercentage + '%');
+    }
+    
+    function updateProgressBar8(percent) {
+        var $bar = $('#progressBar8');
+        var percentage = Math.round(percent);
+        var displayPercentage;
+        var textPercentage;
+    
+        if (percent === 0.01) {
+            displayPercentage = 0;
+            textPercentage = 0;
+        } else {
+            // Si el porcentaje es 0, asignar un ancho mínimo
+            displayPercentage = (percentage === 0) ? 2 : percentage;
+            textPercentage = percentage;
+        }
+        
+        $bar.css('width', displayPercentage + '%');
+        $bar.removeClass('bg-success bg-danger bg-warning');
+    
+        if (percentage < 50) {
+            $bar.addClass('bg-danger');
+        } else if (percentage > 50) {
+            $bar.addClass('bg-success');
+        } else {
+            $bar.addClass('bg-warning');
+        }
+    
+        // Mostrar el porcentaje ajustado en el texto
+        $bar.text(textPercentage + '%');
+    }
+    
+    function updateProgressBar9(percent) {
+        var $bar = $('#progressBar9');
+        var percentage = Math.round(percent);
+        var displayPercentage;
+        var textPercentage;
+    
+        if (percent === 0.01) {
+            displayPercentage = 0;
+            textPercentage = 0;
+        } else {
+            // Si el porcentaje es 0, asignar un ancho mínimo
+            displayPercentage = (percentage === 0) ? 2 : percentage;
+            textPercentage = percentage;
+        }
+        
+        $bar.css('width', displayPercentage + '%');
+        $bar.removeClass('bg-success bg-danger bg-warning');
+    
+        if (percentage < 50) {
+            $bar.addClass('bg-danger');
+        } else if (percentage > 50) {
+            $bar.addClass('bg-success');
+        } else {
+            $bar.addClass('bg-warning');
+        }
+    
+        // Mostrar el porcentaje ajustado en el texto
+        $bar.text(textPercentage + '%');
+    }
+    
+    function updateProgressBar10(percent) {
+        var $bar = $('#progressBar10');
+        var percentage = Math.round(percent);
+        var displayPercentage;
+        var textPercentage;
+    
+        if (percent === 0.01) {
+            displayPercentage = 0;
+            textPercentage = 0;
+        } else {
+            // Si el porcentaje es 0, asignar un ancho mínimo
+            displayPercentage = (percentage === 0) ? 2 : percentage;
+            textPercentage = percentage;
+        }
+        
+        $bar.css('width', displayPercentage + '%');
+        $bar.removeClass('bg-success bg-danger bg-warning');
+    
+        if (percentage < 50) {
+            $bar.addClass('bg-danger');
+        } else if (percentage > 50) {
+            $bar.addClass('bg-success');
+        } else {
+            $bar.addClass('bg-warning');
+        }
+    
+        // Mostrar el porcentaje ajustado en el texto
+        $bar.text(textPercentage + '%');
+    }
+
+  
+
+    function updateStarRating(rating) {
+        const fullStars = Math.floor(rating);
+        const halfStar = rating % 1 >= 0.5 ? 1 : 0;
+        const emptyStars = 5 - fullStars - halfStar;
+        let starsHtml = '';
+    
+        for (let i = 0; i < fullStars; i++) {
+            starsHtml += '<i class="fas fa-star filled"></i>'; // Estrella llena
+        }
+        if (halfStar) {
+            starsHtml += '<i class="fas fa-star-half-alt filled"></i>'; // Media estrella
+        }
+        for (let i = 0; i < emptyStars; i++) {
+            starsHtml += '<i class="far fa-star"></i>'; // Estrella vacía
+        }
+    
+        // Definir el icono HTML con una clase específica
+        var iconHtml = '<i class="bi bi-info-circle small-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Este es el promedio de estrellas basado en las reseñas analizadas."></i>';
+    
+        // Añadir el HTML de las estrellas y el icono al elemento
+        $('#resultadoMediaEstrellas').html(`<div id="ratingValue">${rating.toFixed(2)}</div>${starsHtml} ${iconHtml}`);
+    
+        // Inicializar el tooltip para el nuevo icono
+        $(function () {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+    }
+    
+    function updateStarRating3(rating) {
+        const fullStars = Math.floor(rating);
+        const halfStar = rating % 1 >= 0.5 ? 1 : 0;
+        const emptyStars = 5 - fullStars - halfStar;
+        let starsHtml = '';
+    
+        for (let i = 0; i < fullStars; i++) {
+            starsHtml += '<i class="fas fa-star filled"></i>'; // Estrella llena
+        }
+        if (halfStar) {
+            starsHtml += '<i class="fas fa-star-half-alt filled"></i>'; // Media estrella
+        }
+        for (let i = 0; i < emptyStars; i++) {
+            starsHtml += '<i class="far fa-star"></i>'; // Estrella vacía
+        }
+    
+        // Definir el icono HTML con una clase específica
+        var iconHtml = '<i class="bi bi-info-circle small-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Este es el promedio de estrellas basado en las reseñas analizadas."></i>';
+    
+        // Añadir el HTML de las estrellas y el icono al elemento
+        $('#resultadoMediaEstrellas3').html(`<div id="ratingValue3">${rating.toFixed(2)}</div>${starsHtml} ${iconHtml}`);
+    
+        // Inicializar el tooltip para el nuevo icono
+        $(function () {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+    }
+    
+    function updateStarRating4(rating) {
+        const fullStars = Math.floor(rating);
+        const halfStar = rating % 1 >= 0.5 ? 1 : 0;
+        const emptyStars = 5 - fullStars - halfStar;
+        let starsHtml = '';
+    
+        for (let i = 0; i < fullStars; i++) {
+            starsHtml += '<i class="fas fa-star filled"></i>'; // Estrella llena
+        }
+        if (halfStar) {
+            starsHtml += '<i class="fas fa-star-half-alt filled"></i>'; // Media estrella
+        }
+        for (let i = 0; i < emptyStars; i++) {
+            starsHtml += '<i class="far fa-star"></i>'; // Estrella vacía
+        }
+    
+        // Definir el icono HTML con una clase específica
+        var iconHtml = '<i class="bi bi-info-circle small-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Este es el promedio de estrellas basado en las reseñas analizadas."></i>';
+    
+        // Añadir el HTML de las estrellas y el icono al elemento
+        $('#resultadoMediaEstrellas4').html(`<div id="ratingValue4">${rating.toFixed(2)}</div>${starsHtml} ${iconHtml}`);
+    
+        // Inicializar el tooltip para el nuevo icono
+        $(function () {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+    }
+    
+    function updateStarRating5(rating) {
+        const fullStars = Math.floor(rating);
+        const halfStar = rating % 1 >= 0.5 ? 1 : 0;
+        const emptyStars = 5 - fullStars - halfStar;
+        let starsHtml = '';
+    
+        for (let i = 0; i < fullStars; i++) {
+            starsHtml += '<i class="fas fa-star filled"></i>'; // Estrella llena
+        }
+        if (halfStar) {
+            starsHtml += '<i class="fas fa-star-half-alt filled"></i>'; // Media estrella
+        }
+        for (let i = 0; i < emptyStars; i++) {
+            starsHtml += '<i class="far fa-star"></i>'; // Estrella vacía
+        }
+    
+        // Definir el icono HTML con una clase específica
+        var iconHtml = '<i class="bi bi-info-circle small-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Este es el promedio de estrellas basado en las reseñas analizadas."></i>';
+    
+        // Añadir el HTML de las estrellas y el icono al elemento
+        $('#resultadoMediaEstrellas5').html(`<div id="ratingValue5">${rating.toFixed(2)}</div>${starsHtml} ${iconHtml}`);
+    
+        // Inicializar el tooltip para el nuevo icono
+        $(function () {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+    }
+    
+    function updateStarRating6(rating) {
+        const fullStars = Math.floor(rating);
+        const halfStar = rating % 1 >= 0.5 ? 1 : 0;
+        const emptyStars = 5 - fullStars - halfStar;
+        let starsHtml = '';
+    
+        for (let i = 0; i < fullStars; i++) {
+            starsHtml += '<i class="fas fa-star filled"></i>'; // Estrella llena
+        }
+        if (halfStar) {
+            starsHtml += '<i class="fas fa-star-half-alt filled"></i>'; // Media estrella
+        }
+        for (let i = 0; i < emptyStars; i++) {
+            starsHtml += '<i class="far fa-star"></i>'; // Estrella vacía
+        }
+    
+        // Definir el icono HTML con una clase específica
+        var iconHtml = '<i class="bi bi-info-circle small-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Este es el promedio de estrellas basado en las reseñas analizadas."></i>';
+    
+        // Añadir el HTML de las estrellas y el icono al elemento
+        $('#resultadoMediaEstrellas6').html(`<div id="ratingValue6">${rating.toFixed(2)}</div>${starsHtml} ${iconHtml}`);
+    
+        // Inicializar el tooltip para el nuevo icono
+        $(function () {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+    }
+    
+    function updateStarRating7(rating) {
+        const fullStars = Math.floor(rating);
+        const halfStar = rating % 1 >= 0.5 ? 1 : 0;
+        const emptyStars = 5 - fullStars - halfStar;
+        let starsHtml = '';
+    
+        for (let i = 0; i < fullStars; i++) {
+            starsHtml += '<i class="fas fa-star filled"></i>'; // Estrella llena
+        }
+        if (halfStar) {
+            starsHtml += '<i class="fas fa-star-half-alt filled"></i>'; // Media estrella
+        }
+        for (let i = 0; i < emptyStars; i++) {
+            starsHtml += '<i class="far fa-star"></i>'; // Estrella vacía
+        }
+    
+        // Definir el icono HTML con una clase específica
+        var iconHtml = '<i class="bi bi-info-circle small-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Este es el promedio de estrellas basado en las reseñas analizadas."></i>';
+    
+        // Añadir el HTML de las estrellas y el icono al elemento
+        $('#resultadoMediaEstrellas7').html(`<div id="ratingValue7">${rating.toFixed(2)}</div>${starsHtml} ${iconHtml}`);
+    
+        // Inicializar el tooltip para el nuevo icono
+        $(function () {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+    }
+    
+    function updateStarRating8(rating) {
+        const fullStars = Math.floor(rating);
+        const halfStar = rating % 1 >= 0.5 ? 1 : 0;
+        const emptyStars = 5 - fullStars - halfStar;
+        let starsHtml = '';
+    
+        for (let i = 0; i < fullStars; i++) {
+            starsHtml += '<i class="fas fa-star filled"></i>'; // Estrella llena
+        }
+        if (halfStar) {
+            starsHtml += '<i class="fas fa-star-half-alt filled"></i>'; // Media estrella
+        }
+        for (let i = 0; i < emptyStars; i++) {
+            starsHtml += '<i class="far fa-star"></i>'; // Estrella vacía
+        }
+    
+        // Definir el icono HTML con una clase específica
+        var iconHtml = '<i class="bi bi-info-circle small-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Este es el promedio de estrellas basado en las reseñas analizadas."></i>';
+    
+        // Añadir el HTML de las estrellas y el icono al elemento
+        $('#resultadoMediaEstrellas8').html(`<div id="ratingValue8">${rating.toFixed(2)}</div>${starsHtml} ${iconHtml}`);
+    
+        // Inicializar el tooltip para el nuevo icono
+        $(function () {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+    }
+    
+    function updateStarRating9(rating) {
+        const fullStars = Math.floor(rating);
+        const halfStar = rating % 1 >= 0.5 ? 1 : 0;
+        const emptyStars = 5 - fullStars - halfStar;
+        let starsHtml = '';
+    
+        for (let i = 0; i < fullStars; i++) {
+            starsHtml += '<i class="fas fa-star filled"></i>'; // Estrella llena
+        }
+        if (halfStar) {
+            starsHtml += '<i class="fas fa-star-half-alt filled"></i>'; // Media estrella
+        }
+        for (let i = 0; i < emptyStars; i++) {
+            starsHtml += '<i class="far fa-star"></i>'; // Estrella vacía
+        }
+    
+        // Definir el icono HTML con una clase específica
+        var iconHtml = '<i class="bi bi-info-circle small-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Este es el promedio de estrellas basado en las reseñas analizadas."></i>';
+    
+        // Añadir el HTML de las estrellas y el icono al elemento
+        $('#resultadoMediaEstrellas9').html(`<div id="ratingValue9">${rating.toFixed(2)}</div>${starsHtml} ${iconHtml}`);
+    
+        // Inicializar el tooltip para el nuevo icono
+        $(function () {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+    }
+
+function updateStarRating10(rating) {
+    const fullStars = Math.floor(rating);
+    const halfStar = rating % 1 >= 0.5 ? 1 : 0;
+    const emptyStars = 5 - fullStars - halfStar;
+    let starsHtml = '';
+
+    for (let i = 0; i < fullStars; i++) {
+        starsHtml += '<i class="fas fa-star filled"></i>'; // Estrella llena
+    }
+    if (halfStar) {
+        starsHtml += '<i class="fas fa-star-half-alt filled"></i>'; // Media estrella
+    }
+    for (let i = 0; i < emptyStars; i++) {
+        starsHtml += '<i class="far fa-star"></i>'; // Estrella vacía
+    }
+
+    // Definir el icono HTML con una clase específica
+    var iconHtml = '<i class="bi bi-info-circle small-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Este es el promedio de estrellas basado en las reseñas analizadas."></i>';
+
+    // Añadir el HTML de las estrellas y el icono al elemento
+    $('#resultadoMediaEstrellas10').html(`<div id="ratingValue10">${rating.toFixed(2)}</div>${starsHtml} ${iconHtml}`);
+
+    // Inicializar el tooltip para el nuevo icono
+    $(function () {
+        $('[data-bs-toggle="tooltip"]').tooltip();
+    });
+}
+
+
+function scrollToDivContainer(containerId) {
+    const container = document.getElementById(containerId);
+    const offset = 100; // Adjust this value to set the desired offset
+    const topPosition = container.offsetTop - offset;
+    window.scrollTo({ top: topPosition, behavior: 'smooth' });
+    
+}
+
+function animateProgressCircle(elementId, targetPercentage) {
+    console.log("Animating circle for elementId:", elementId, "with target:", targetPercentage);
+    let number = document.getElementById(elementId);
+    if (!number) {
+     
+        return;
+    }
+    let counter = parseInt(number.textContent) || 0;
+    let circle = number.nextElementSibling.querySelector('circle');
+    if (!circle) {
+       
+        return;
+    }
+    clearInterval(number.dataset.intervalId); // Limpiar intervalo anterior si existe
+    let interval = setInterval(() => {
+        if (counter >= targetPercentage) {
+            clearInterval(interval);
+        } else {
+            counter++;
+            number.textContent = counter + "%";
+            circle.style.strokeDashoffset = 440 - (440 * counter / 100);
+        }
+    }, 30);
+    number.dataset.intervalId = interval; // Almacena el ID del intervalo para limpiarlo si es necesario
+}
+
+function resetCircles() {
+    const numbers = document.querySelectorAll('.skill div[id^="number"]');
+    numbers.forEach((num) => {
+        num.textContent = '0%'; // Resetea el texto al 0%
+    });
+
+    const circles = document.querySelectorAll('.skill circle');
+    circles.forEach((circle) => {
+        circle.style.strokeDashoffset = 440; // Resetea el círculo al estado inicial
+    });
+}
+
+
+
+function actualizarPalabrasInteres(palabras) {
+    let mitad = Math.ceil(palabras.length / 2); // Encontrar el punto medio para dividir las palabras en dos listas
+    let primeraMitad = palabras.slice(0, mitad);
+    let segundaMitad = palabras.slice(mitad);
+
+    // Obtener los elementos <ul> usando sus IDs
+    let lista1 = document.getElementById('lista-interes-1');
+    let lista2 = document.getElementById('lista-interes-2');
+
+    // Limpiar contenido anterior para asegurarse de que no se dupliquen los elementos
+    lista1.innerHTML = '';
+    lista2.innerHTML = '';
+
+    // Función para añadir palabras a un elemento <ul>
+    function añadirPalabrasALista(lista, palabras) {
+        palabras.forEach(palabra => {
+            let li = document.createElement('li');
+            li.textContent = palabra;
+            lista.appendChild(li);
+        });
+    }
+
+    // Añadir palabras a cada lista
+    añadirPalabrasALista(lista1, primeraMitad);
+    añadirPalabrasALista(lista2, segundaMitad);
+}
+function actualizarPalabrasInteres2(palabras) {
+    let mitad = Math.ceil(palabras.length / 2); // Encontrar el punto medio para dividir las palabras en dos listas
+    let primeraMitad = palabras.slice(0, mitad);
+    let segundaMitad = palabras.slice(mitad);
+
+    // Obtener los elementos <ul> usando sus IDs
+    let lista1 = document.getElementById('lista-interes-3');
+    let lista2 = document.getElementById('lista-interes-4');
+
+    // Limpiar contenido anterior para asegurarse de que no se dupliquen los elementos
+    lista1.innerHTML = '';
+    lista2.innerHTML = '';
+
+    // Función para añadir palabras a un elemento <ul>
+    function añadirPalabrasALista(lista, palabras) {
+        palabras.forEach(palabra => {
+            let li = document.createElement('li');
+            li.textContent = palabra;
+            lista.appendChild(li);
+        });
+    }
+
+    // Añadir palabras a cada lista
+    añadirPalabrasALista(lista1, primeraMitad);
+    añadirPalabrasALista(lista2, segundaMitad);
+}
+function actualizarPalabrasInteres3(palabras) {
+    let mitad = Math.ceil(palabras.length / 2); // Encontrar el punto medio para dividir las palabras en dos listas
+    let primeraMitad = palabras.slice(0, mitad);
+    let segundaMitad = palabras.slice(mitad);
+
+    // Obtener los elementos <ul> usando sus IDs
+    let lista1 = document.getElementById('lista-interes-5');
+    let lista2 = document.getElementById('lista-interes-6');
+
+    // Limpiar contenido anterior para asegurarse de que no se dupliquen los elementos
+    lista1.innerHTML = '';
+    lista2.innerHTML = '';
+
+    // Función para añadir palabras a un elemento <ul>
+    function añadirPalabrasALista(lista, palabras) {
+        palabras.forEach(palabra => {
+            let li = document.createElement('li');
+            li.textContent = palabra;
+            lista.appendChild(li);
+        });
+    }
+
+    // Añadir palabras a cada lista
+    añadirPalabrasALista(lista1, primeraMitad);
+    añadirPalabrasALista(lista2, segundaMitad);
+}
+
+function actualizarPalabrasInteres4(palabras) {
+    let mitad = Math.ceil(palabras.length / 2); // Encontrar el punto medio para dividir las palabras en dos listas
+    let primeraMitad = palabras.slice(0, mitad);
+    let segundaMitad = palabras.slice(mitad);
+
+    // Obtener los elementos <ul> usando sus IDs
+    let lista1 = document.getElementById('lista-interes-7');
+    let lista2 = document.getElementById('lista-interes-8');
+
+    // Limpiar contenido anterior para asegurarse de que no se dupliquen los elementos
+    lista1.innerHTML = '';
+    lista2.innerHTML = '';
+
+    // Función para añadir palabras a un elemento <ul>
+    function añadirPalabrasALista(lista, palabras) {
+        palabras.forEach(palabra => {
+            let li = document.createElement('li');
+            li.textContent = palabra;
+            lista.appendChild(li);
+        });
+    }
+
+    // Añadir palabras a cada lista
+    añadirPalabrasALista(lista1, primeraMitad);
+    añadirPalabrasALista(lista2, segundaMitad);
+}
+
+function actualizarPalabrasInteres5(palabras) {
+    let mitad = Math.ceil(palabras.length / 2); // Encontrar el punto medio para dividir las palabras en dos listas
+    let primeraMitad = palabras.slice(0, mitad);
+    let segundaMitad = palabras.slice(mitad);
+
+    // Obtener los elementos <ul> usando sus IDs
+    let lista1 = document.getElementById('lista-interes-9');
+    let lista2 = document.getElementById('lista-interes-10');
+
+    // Limpiar contenido anterior para asegurarse de que no se dupliquen los elementos
+    lista1.innerHTML = '';
+    lista2.innerHTML = '';
+
+    // Función para añadir palabras a un elemento <ul>
+    function añadirPalabrasALista(lista, palabras) {
+        palabras.forEach(palabra => {
+            let li = document.createElement('li');
+            li.textContent = palabra;
+            lista.appendChild(li);
+        });
+    }
+
+    // Añadir palabras a cada lista
+    añadirPalabrasALista(lista1, primeraMitad);
+    añadirPalabrasALista(lista2, segundaMitad);
+}
+
+function actualizarPalabrasInteres6(palabras) {
+    let mitad = Math.ceil(palabras.length / 2); // Encontrar el punto medio para dividir las palabras en dos listas
+    let primeraMitad = palabras.slice(0, mitad);
+    let segundaMitad = palabras.slice(mitad);
+
+    // Obtener los elementos <ul> usando sus IDs
+    let lista1 = document.getElementById('lista-interes-11');
+    let lista2 = document.getElementById('lista-interes-12');
+
+    // Limpiar contenido anterior para asegurarse de que no se dupliquen los elementos
+    lista1.innerHTML = '';
+    lista2.innerHTML = '';
+
+    // Función para añadir palabras a un elemento <ul>
+    function añadirPalabrasALista(lista, palabras) {
+        palabras.forEach(palabra => {
+            let li = document.createElement('li');
+            li.textContent = palabra;
+            lista.appendChild(li);
+        });
+    }
+
+    // Añadir palabras a cada lista
+    añadirPalabrasALista(lista1, primeraMitad);
+    añadirPalabrasALista(lista2, segundaMitad);
+}
+
+function actualizarPalabrasInteres7(palabras) {
+    let mitad = Math.ceil(palabras.length / 2); // Encontrar el punto medio para dividir las palabras en dos listas
+    let primeraMitad = palabras.slice(0, mitad);
+    let segundaMitad = palabras.slice(mitad);
+
+    // Obtener los elementos <ul> usando sus IDs
+    let lista1 = document.getElementById('lista-interes-13');
+    let lista2 = document.getElementById('lista-interes-14');
+
+    // Limpiar contenido anterior para asegurarse de que no se dupliquen los elementos
+    lista1.innerHTML = '';
+    lista2.innerHTML = '';
+
+    // Función para añadir palabras a un elemento <ul>
+    function añadirPalabrasALista(lista, palabras) {
+        palabras.forEach(palabra => {
+            let li = document.createElement('li');
+            li.textContent = palabra;
+            lista.appendChild(li);
+        });
+    }
+
+    // Añadir palabras a cada lista
+    añadirPalabrasALista(lista1, primeraMitad);
+    añadirPalabrasALista(lista2, segundaMitad);
+}
+
+
+function actualizarPalabrasInteres8(palabras) {
+    let mitad = Math.ceil(palabras.length / 2); // Encontrar el punto medio para dividir las palabras en dos listas
+    let primeraMitad = palabras.slice(0, mitad);
+    let segundaMitad = palabras.slice(mitad);
+
+    // Obtener los elementos <ul> usando sus IDs
+    let lista1 = document.getElementById('lista-interes-15');
+    let lista2 = document.getElementById('lista-interes-16');
+
+    // Limpiar contenido anterior para asegurarse de que no se dupliquen los elementos
+    lista1.innerHTML = '';
+    lista2.innerHTML = '';
+
+    // Función para añadir palabras a un elemento <ul>
+    function añadirPalabrasALista(lista, palabras) {
+        palabras.forEach(palabra => {
+            let li = document.createElement('li');
+            li.textContent = palabra;
+            lista.appendChild(li);
+        });
+    }
+
+    // Añadir palabras a cada lista
+    añadirPalabrasALista(lista1, primeraMitad);
+    añadirPalabrasALista(lista2, segundaMitad);
+}
+
+
+function actualizarPalabrasInteres9(palabras) {
+    let mitad = Math.ceil(palabras.length / 2); // Encontrar el punto medio para dividir las palabras en dos listas
+    let primeraMitad = palabras.slice(0, mitad);
+    let segundaMitad = palabras.slice(mitad);
+
+    // Obtener los elementos <ul> usando sus IDs
+    let lista1 = document.getElementById('lista-interes-17');
+    let lista2 = document.getElementById('lista-interes-18');
+
+    // Limpiar contenido anterior para asegurarse de que no se dupliquen los elementos
+    lista1.innerHTML = '';
+    lista2.innerHTML = '';
+
+    // Función para añadir palabras a un elemento <ul>
+    function añadirPalabrasALista(lista, palabras) {
+        palabras.forEach(palabra => {
+            let li = document.createElement('li');
+            li.textContent = palabra;
+            lista.appendChild(li);
+        });
+    }
+
+    // Añadir palabras a cada lista
+    añadirPalabrasALista(lista1, primeraMitad);
+    añadirPalabrasALista(lista2, segundaMitad);
+}
+
+
+
+function cargarPalabrasDeInteres(universidadId) {
+    $.ajax({
+        url: `http://127.0.0.1:8000/obtener_palabras_de_interes/${universidadId}`,
+        type: 'get',
+        dataType: 'json',
+        success: function(response) {
+            console.log(response);  // Agregar esto para ver la respuesta completa
+            if(response.reviews_tags) {
+                actualizarPalabrasInteres(response.reviews_tags);
+            }
+        },
+        error: function() {
+            alert('Error al cargar las palabras de interés.');
+        }
+    });
+}
+
+function cargarPalabrasDeInteres2(universidadId) {
+    $.ajax({
+        url: `/obtener_palabras_de_interes/${universidadId}`,
+        type: 'get',
+        dataType: 'json',
+        success: function(response) {
+            console.log(response);  // Agregar esto para ver la respuesta completa
+            if(response.reviews_tags) {
+                actualizarPalabrasInteres2(response.reviews_tags);
+            }
+        },
+        error: function() {
+            alert('Error al cargar las palabras de interés.');
+        }
+    });
+}
+function cargarPalabrasDeInteres3(universidadId) {
+    $.ajax({
+        url: `/obtener_palabras_de_interes/${universidadId}`,
+        type: 'get',
+        dataType: 'json',
+        success: function(response) {
+            console.log(response);  // Agregar esto para ver la respuesta completa
+            if(response.reviews_tags) {
+                actualizarPalabrasInteres3(response.reviews_tags);
+            }
+        },
+        error: function() {
+            
+        }
+    });
+}
+
+function cargarPalabrasDeInteres4(universidadId) {
+    $.ajax({
+        url: `/obtener_palabras_de_interes/${universidadId}`,
+        type: 'get',
+        dataType: 'json',
+        success: function(response) {
+            console.log(response);  // Agregar esto para ver la respuesta completa
+            if(response.reviews_tags) {
+                actualizarPalabrasInteres4(response.reviews_tags);
+            }
+        },
+        error: function() {
+            
+        }
+    });
+}
+
+function cargarPalabrasDeInteres5(universidadId) {
+    $.ajax({
+        url: `/obtener_palabras_de_interes/${universidadId}`,
+        type: 'get',
+        dataType: 'json',
+        success: function(response) {
+            console.log(response);  // Agregar esto para ver la respuesta completa
+            if(response.reviews_tags) {
+                actualizarPalabrasInteres5(response.reviews_tags);
+            }
+        },
+        error: function() {
+            
+        }
+    });
+}
+
+function cargarPalabrasDeInteres6(universidadId) {
+    $.ajax({
+        url: `/obtener_palabras_de_interes/${universidadId}`,
+        type: 'get',
+        dataType: 'json',
+        success: function(response) {
+            console.log(response);  // Agregar esto para ver la respuesta completa
+            if(response.reviews_tags) {
+                actualizarPalabrasInteres6(response.reviews_tags);
+            }
+        },
+        error: function() {
+            
+        }
+    });
+}
+
+function cargarPalabrasDeInteres7(universidadId) {
+    $.ajax({
+        url: `/obtener_palabras_de_interes/${universidadId}`,
+        type: 'get',
+        dataType: 'json',
+        success: function(response) {
+            console.log(response);  // Agregar esto para ver la respuesta completa
+            if(response.reviews_tags) {
+                actualizarPalabrasInteres7(response.reviews_tags);
+            }
+        },
+        error: function() {
+            
+        }
+    });
+}
+
+function cargarPalabrasDeInteres8(universidadId) {
+    $.ajax({
+        url: `/obtener_palabras_de_interes/${universidadId}`,
+        type: 'get',
+        dataType: 'json',
+        success: function(response) {
+            console.log(response);  // Agregar esto para ver la respuesta completa
+            if(response.reviews_tags) {
+                actualizarPalabrasInteres8(response.reviews_tags);
+            }
+        },
+        error: function() {
+            
+        }
+    });
+}
+
+function cargarPalabrasDeInteres9(universidadId) {
+    $.ajax({
+        url: `/obtener_palabras_de_interes/${universidadId}`,
+        type: 'get',
+        dataType: 'json',
+        success: function(response) {
+            console.log(response);  // Agregar esto para ver la respuesta completa
+            if(response.reviews_tags) {
+                actualizarPalabrasInteres9(response.reviews_tags);
+            }
+        },
+        error: function() {
+            
+        }
+    });
+}
+
+
+</script>
+
+
+
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</body>
+</html>
